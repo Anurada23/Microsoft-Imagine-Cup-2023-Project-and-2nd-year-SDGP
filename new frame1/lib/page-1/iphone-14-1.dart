@@ -33,8 +33,9 @@ class Scene extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 16*fem, 377*fem),
               child: Text(
                 'NailDoc',
-                style: SafeGoogleFont (
-                  'Medula One',
+
+                  style: GoogleFonts.getFont('Medula One',
+
                   fontSize: 100*ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.0075*ffem/fem,
@@ -54,8 +55,9 @@ class Scene extends StatelessWidget {
               child: Center(
                 child: Text(
                   'Get Started',
-                  style: SafeGoogleFont (
-                    'Roboto Condensed',
+                  style: GoogleFonts.getFont('Roboto Condensed ',
+
+
                     fontSize: 32*ffem,
                     fontWeight: FontWeight.w700,
                     height: 1.1725*ffem/fem,
@@ -69,8 +71,7 @@ class Scene extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 26*fem),
               child: Text(
                 'All rights reserved',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
+                style: GoogleFonts.getFont('Roboto Condensed ',
                   fontSize: 15*ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.1725*ffem/fem,
