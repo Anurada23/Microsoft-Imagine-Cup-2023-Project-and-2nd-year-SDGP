@@ -18,11 +18,13 @@ class MyApp extends StatelessWidget {
 		theme: ThemeData(
 		primarySwatch: Colors.blue,
 		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: Scene(),
-		),
-		),
+		 home:Scene(),
+		 // home: Scaffold(
+		 // body: SingleChildScrollView(
+		 // 	child: Scene(),
+		 // ),
+		 // ),
 	);
 	}
 }
+
