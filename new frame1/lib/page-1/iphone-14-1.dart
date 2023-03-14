@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class Scene1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -43,28 +43,20 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              // autogroupuuyankg (3ZegTmCkCHoa5z3kptUuya)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 91*fem),
-              width: double.infinity,
-              height: 77*fem,
-              decoration: BoxDecoration (
-                color: Color(0xffffffff),
-                borderRadius: BorderRadius.circular(24*fem),
-              ),
-              child: Center(
-                child: Text(
-                  'Get Started',
-                  //style: GoogleFonts.getFont('lato',    // roboto Condensed *Anurada
-                  style: GoogleFonts.abel(
-
-                    fontSize: 32*ffem,
-                    fontWeight: FontWeight.w700,
-                    height: 1.1725*ffem/fem,
-                    color: Color(0xffa8573a),
-                  ),
+            ElevatedButton(
+              onPressed: () {
+                // Function to call when button is pressed
+              },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Color(0xffa8573a), backgroundColor: Colors.white, padding: EdgeInsets.all(0.0),
+                fixedSize: Size(200 , 70), // Set text color of button
+                textStyle: TextStyle(
+                  fontSize: 32*ffem,
+                  fontWeight: FontWeight.w700,
+                  height: 1.1725*ffem/fem,
                 ),
               ),
+              child: Text('Get Started'),
             ),
             Container(
               // allrightsreservedovg (1:13)
