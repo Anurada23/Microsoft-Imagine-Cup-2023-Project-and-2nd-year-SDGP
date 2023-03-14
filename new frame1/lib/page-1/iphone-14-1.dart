@@ -55,8 +55,8 @@ class Scene extends StatelessWidget {
               child: Center(
                 child: Text(
                   'Get Started',
-                  style: GoogleFonts.getFont('Roboto Condensed ',
-
+                  //style: GoogleFonts.getFont('lato',    // roboto Condensed *Anurada
+                  style: GoogleFonts.abel(
 
                     fontSize: 32*ffem,
                     fontWeight: FontWeight.w700,
@@ -71,7 +71,8 @@ class Scene extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 26*fem),
               child: Text(
                 'All rights reserved',
-                style: GoogleFonts.getFont('Roboto Condensed ',
+                                                    //style: GoogleFonts.getFont('abel',                     //Roboto condensed
+                style: GoogleFonts.abel(
                   fontSize: 15*ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.1725*ffem/fem,
