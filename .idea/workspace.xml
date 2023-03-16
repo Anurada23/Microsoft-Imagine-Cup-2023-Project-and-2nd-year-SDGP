@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b2e72-f841-4f52-ad22-8e3030c83994" name="Changes" comment="My commit">
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Read-ME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-10.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-11.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-12.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-13.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-3.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-4.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-6.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-7.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-8.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-9.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Code-Of-Duty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Code-Of-Duty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-1.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +44,10 @@
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "C:/Users/user/gradle",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "dart.settings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -161,8 +150,25 @@
       <option name="project" value="LOCAL" />
       <updated>1678769577875</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="My commit">
+      <created>1678775124020</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678775124020</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
