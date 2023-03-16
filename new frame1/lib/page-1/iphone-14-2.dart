@@ -166,45 +166,121 @@ class Scene2 extends StatelessWidget {
             ),
             Positioned(
               // signup2dN (1:12)
-              left: 140*fem,
+              // left: 140*fem,
+              // top: 593*fem,
+              // child: Align(
+              //   child: SizedBox(
+              //     width: 109*fem,
+              //     height: 38*fem,
+              //     child: Text(
+              //       'SIGN UP',
+              //       style: GoogleFonts.abel (
+              //
+              //         fontSize: 32*ffem,
+              //         fontWeight: FontWeight.w700,
+              //         height: 1.1725*ffem/fem,
+              //         color: Color(0xff4e2c20),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              //
+              left: 114*fem,
               top: 593*fem,
               child: Align(
-                child: SizedBox(
-                  width: 109*fem,
-                  height: 38*fem,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Function to call when button is pressed
+                  },
+                  style: ElevatedButton.styleFrom(
+
+                    fixedSize: Size(170, 50),
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0),
+                    ),
+                    padding: EdgeInsets.all(0.0),
+                    textStyle: TextStyle(
+                      fontSize: 32*ffem,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1725*ffem/fem,
+                      color: Color(0xff4e2c20),
+                    ),
+                  ),
                   child: Text(
                     'SIGN UP',
                     style: GoogleFonts.abel (
-
+                      color:Color(0xff4e2c20),
                       fontSize: 32*ffem,
                       fontWeight: FontWeight.w700,
                       height: 1.1725*ffem/fem,
-                      color: Color(0xff4e2c20),
                     ),
                   ),
                 ),
               ),
+
+
+
+
+
+
             ),
             Positioned(
               // login7ui (1:13)
-              left: 154*fem,
-              top: 719*fem,
+              left: 115*fem,
+              top: 716*fem,
+              // child: Align(
+              //   child: SizedBox(
+              //     width: 81*fem,
+              //     height: 38*fem,
+              //     child: Text(
+              //       'LOGIN',
+              //       style: GoogleFonts.abel (
+              //
+              //         fontSize: 32*ffem,
+              //         fontWeight: FontWeight.w700,
+              //         height: 1.1725*ffem/fem,
+              //         color: Color(0xff4e2c20),
+              //       ),
+              //     ),
+              //   ),
+              // ),
               child: Align(
-                child: SizedBox(
-                  width: 81*fem,
-                  height: 38*fem,
-                  child: Text(
-                    'LOGIN',
-                    style: GoogleFonts.abel (
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Function to call when button is pressed
+                  },
+                  style: ElevatedButton.styleFrom(
 
+                    fixedSize: Size(170, 50),
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0),
+                    ),
+                    padding: EdgeInsets.all(0.0),
+                    textStyle: TextStyle(
                       fontSize: 32*ffem,
                       fontWeight: FontWeight.w700,
                       height: 1.1725*ffem/fem,
                       color: Color(0xff4e2c20),
                     ),
                   ),
+                  child: Text(
+                    'LOGIN',
+                    style: GoogleFonts.abel (
+                      color:Color(0xff4e2c20),
+                      fontSize: 32*ffem,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1725*ffem/fem,
+                    ),
+                  ),
                 ),
               ),
+
+
+
             ),
           ],
         ),

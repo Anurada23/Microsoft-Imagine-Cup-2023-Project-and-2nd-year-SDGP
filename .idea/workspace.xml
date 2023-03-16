@@ -12,8 +12,7 @@
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Read-ME" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Read-ME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-2.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678948575440</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="My commit">
+      <created>1678970918514</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678970918514</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

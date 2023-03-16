@@ -2,3 +2,31 @@
 2-Login
 3-signup
 4-
+
+
+
+
+
+transparent button
+
+ElevatedButton(
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MyApp2())
+    );
+    // Function to call when button is pressed
+  },
+  style: ElevatedButton.styleFrom(
+    foregroundColor: Color(0xffa8573a),
+    backgroundColor: Colors.transparent, // Set background color to transparent
+    padding: EdgeInsets.all(0.0),
+    fixedSize: Size(200 , 70),
+    textStyle: TextStyle(
+      fontSize: 32*ffem,
+      fontWeight: FontWeight.w700,
+      height: 1.1725*ffem/fem,
+    ),
+  ),
+  child: Text('Get Started'),
+),
