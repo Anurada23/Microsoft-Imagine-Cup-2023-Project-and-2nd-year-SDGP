@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/main.dart';
 import 'package:myapp/page-1/iphone-14-2.dart';
 import 'package:myapp/utils.dart';
 
 class Scene1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+
+
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
@@ -48,7 +52,7 @@ class Scene1 extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Scene2() )
+                  MaterialPageRoute(builder: (context) => MyApp2())
                 );
                 // Function to call when button is pressed
               },

@@ -7,9 +7,11 @@ import 'package:myapp/utils.dart';
 class Scene2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
+
     return Container(
       width: double.infinity,
       child: Container(
@@ -205,6 +207,53 @@ class Scene2 extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+// class SecondPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter',
+//       debugShowCheckedModeBanner: false,
+//       scrollBehavior: MyCustomScrollBehavior(),
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       //home:Scene(),
+//       home: Scaffold(
+//         body: SingleChildScrollView(
+//           child: SecondPage(),
+//
+//         ),
+//       ),
+//     );
+//
+//
+//
+//
+//   }
+// }
+
+
+class MyApp2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      //home:Scene(),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Scene2(),
+
         ),
       ),
     );
