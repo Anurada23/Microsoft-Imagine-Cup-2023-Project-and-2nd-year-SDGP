@@ -4,6 +4,9 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+import 'iphone-14-3.dart';
+import 'iphone-14-4.dart';
+
 class Scene2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -190,7 +193,10 @@ class Scene2 extends StatelessWidget {
               child: Align(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Function to call when button is pressed
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp3())
+                    );
                   },
                   style: ElevatedButton.styleFrom(
 
@@ -249,7 +255,10 @@ class Scene2 extends StatelessWidget {
               child: Align(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Function to call when button is pressed
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp4())
+                    );
                   },
                   style: ElevatedButton.styleFrom(
 
