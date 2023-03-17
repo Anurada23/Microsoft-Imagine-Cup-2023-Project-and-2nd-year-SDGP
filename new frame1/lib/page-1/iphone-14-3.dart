@@ -122,14 +122,16 @@ class Scene3 extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              // autogroupauxmWCY (Sj7AfFk3B2wuKr63hgauXM)
-              margin: EdgeInsets.fromLTRB(75*fem, 0*fem, 60*fem, 23*fem),
-              width: double.infinity,
-              height: 48*fem,
-              decoration: BoxDecoration (
-                color: Color(0xffffffff),
-                borderRadius: BorderRadius.circular(10*fem),
+            ElevatedButton(
+              onPressed: () {
+                // Add your onTap code here
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                elevation: MaterialStateProperty.all<double>(0),
+                fixedSize: MaterialStateProperty.all<Size>(Size(160, 50)),
+
+
               ),
               child: Center(
                 child: Text(
@@ -144,6 +146,35 @@ class Scene3 extends StatelessWidget {
                 ),
               ),
             ),
+
+
+
+
+
+
+
+            // Container(
+            //   // autogroupauxmWCY (Sj7AfFk3B2wuKr63hgauXM)
+            //   margin: EdgeInsets.fromLTRB(75*fem, 0*fem, 60*fem, 23*fem),
+            //   width: double.infinity,
+            //   height: 48*fem,
+            //   decoration: BoxDecoration (
+            //     color: Color(0xffffffff),
+            //     borderRadius: BorderRadius.circular(10*fem),
+            //   ),
+            //   child: Center(
+            //     child: Text(
+            //       'SIGN UP',
+            //       style: SafeGoogleFont (
+            //         'Roboto Condensed',
+            //         fontSize: 32*ffem,
+            //         fontWeight: FontWeight.w700,
+            //         height: 1.1725*ffem/fem,
+            //         color: Color(0xff292929),
+            //       ),
+            //     ),
+            //   ),
+            // ),
             Container(
               // haveanaccountloginnfr (22:9)
               margin: EdgeInsets.fromLTRB(15*fem, 0*fem, 0*fem, 0*fem),
