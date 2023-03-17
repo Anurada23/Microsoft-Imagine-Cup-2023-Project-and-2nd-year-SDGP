@@ -43,53 +43,62 @@ class Scene4 extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupgiuoWbA (Sj7AyAPsBhDftcKhBfgiUo)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 83*fem),
-              padding: EdgeInsets.fromLTRB(31*fem, 23*fem, 31*fem, 16*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
-              ),
-              child: Text(
-                'Username / Email',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xff807e7e),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Username / Email',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
+
             Container(
-              // autogrouppgajPex (Sj7B2uncxLuPbBrsj9pgAj)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 183*fem),
-              padding: EdgeInsets.fromLTRB(28*fem, 20*fem, 28*fem, 19*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
-              ),
-              child: Text(
-                ' Password',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xc1807e7e),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
-            Container(
-              // autogroupx31hGTr (Sj7B6k1a1TCntBLtCBX31H)
-              margin: EdgeInsets.fromLTRB(67*fem, 0*fem, 68*fem, 21*fem),
-              width: double.infinity,
-              height: 48*fem,
-              decoration: BoxDecoration (
-                color: Color(0xffffffff),
-                borderRadius: BorderRadius.circular(10*fem),
+
+
+            ElevatedButton(
+              onPressed: () {
+                // Add your onTap code here
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                elevation: MaterialStateProperty.all<double>(0),
+                fixedSize: MaterialStateProperty.all<Size>(Size(160, 50)),
+
+
               ),
               child: Center(
                 child: Text(
@@ -104,6 +113,7 @@ class Scene4 extends StatelessWidget {
                 ),
               ),
             ),
+
             Container(
               // alreadyhaveanaccountsignupwpt (23:22)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),

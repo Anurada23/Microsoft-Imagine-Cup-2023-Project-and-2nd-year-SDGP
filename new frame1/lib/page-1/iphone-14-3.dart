@@ -42,86 +42,125 @@ class Scene3 extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              // autogroup3vix2FS (Sj7AMRvQSqHpMVoE9F3ViX)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 57*fem),
-              padding: EdgeInsets.fromLTRB(21*fem, 23*fem, 21*fem, 16*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
+            // Container(
+            //   // autogroup3vix2FS (Sj7AMRvQSqHpMVoE9F3ViX)
+            //   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 57*fem),
+            //   padding: EdgeInsets.fromLTRB(21*fem, 23*fem, 21*fem, 16*fem),
+            //   width: double.infinity,
+            //   decoration: BoxDecoration (
+            //     color: Color(0xfff3efef),
+            //     borderRadius: BorderRadius.circular(21*fem),
+            //   ),
+            //   child: Text(
+            //     'Full Name',
+            //     style: SafeGoogleFont (
+            //       'Roboto Condensed',
+            //       fontSize: 20*ffem,
+            //       fontWeight: FontWeight.w400,
+            //       height: 1.1725*ffem/fem,
+            //       color: Color(0xff807e7e),
+            //     ),
+            //   ),
+            // ),
+        Container(
+          margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: 'Full Name',
+              labelStyle: SafeGoogleFont(
+                'Roboto Condensed',
+                fontSize: 20 * ffem,
+                fontWeight: FontWeight.w400,
+                height: 1.1725 * ffem / fem,
+                color: Color(0xff807e7e),
               ),
-              child: Text(
-                'Full Name',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xff807e7e),
+              filled: true,
+              fillColor: Color(0xfff3efef),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(21 * fem),
+                borderSide: BorderSide.none,
+              ),
+              contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+            ),
+          ),
+        ),
+
+
+
+
+
+
+
+
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Username / Email',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
+
             Container(
-              // autogroupgew1toS (Sj7ASbSU3HS996QTNygEw1)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 56*fem),
-              padding: EdgeInsets.fromLTRB(21*fem, 22*fem, 21*fem, 17*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
-              ),
-              child: Text(
-                'Username / Email',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xff807e7e),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'New Password',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
+
             Container(
-              // autogroupizfhy4C (Sj7AWveao9RdzZZRPGizfH)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 57*fem),
-              padding: EdgeInsets.fromLTRB(21*fem, 21*fem, 21*fem, 18*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
-              ),
-              child: Text(
-                'New Password',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xff807e7e),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Confirm New Password',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
-            Container(
-              // autogroup1lz3EVv (Sj7AbbBUgqssDgVh5k1Lz3)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 88*fem),
-              padding: EdgeInsets.fromLTRB(21*fem, 21*fem, 21*fem, 18*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xfff3efef),
-                borderRadius: BorderRadius.circular(21*fem),
-              ),
-              child: Text(
-                'Confirm New Password',
-                style: SafeGoogleFont (
-                  'Roboto Condensed',
-                  fontSize: 20*ffem,
-                  fontWeight: FontWeight.w400,
-                  height: 1.1725*ffem/fem,
-                  color: Color(0xff807e7e),
-                ),
-              ),
-            ),
+
             ElevatedButton(
               onPressed: () {
                 // Add your onTap code here
