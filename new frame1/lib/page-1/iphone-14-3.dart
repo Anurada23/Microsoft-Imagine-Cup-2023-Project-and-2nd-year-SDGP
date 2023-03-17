@@ -4,7 +4,22 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+class MyApp3 extends StatefulWidget {
+  @override
+  _MyApp3State createState() => _MyApp3State();
+}
+
+
+
+
+
+
 class Scene3 extends StatelessWidget {
+  late String fullname;
+  late String newpassword;
+  late String username;
+  late String confirmpassword;
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -65,6 +80,11 @@ class Scene3 extends StatelessWidget {
         Container(
           margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
           child: TextField(
+            onChanged: (text1){
+              print(text1);
+              fullname=text1;
+
+            },
             decoration: InputDecoration(
               labelText: 'Full Name',
               labelStyle: SafeGoogleFont(
@@ -95,6 +115,11 @@ class Scene3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
+                onChanged: (text2){
+                  print(text2);
+                  username=text2;
+
+                },
                 decoration: InputDecoration(
                   labelText: 'Username / Email',
                   labelStyle: SafeGoogleFont(
@@ -118,6 +143,11 @@ class Scene3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
+                onChanged: (text3){
+                  print(text3);
+                  newpassword=text3;
+
+                },
                 decoration: InputDecoration(
                   labelText: 'New Password',
                   labelStyle: SafeGoogleFont(
@@ -141,6 +171,11 @@ class Scene3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
+                onChanged: (text4){
+                  print(text4);
+                  confirmpassword=text4;
+
+                },
                 decoration: InputDecoration(
                   labelText: 'Confirm New Password',
                   labelStyle: SafeGoogleFont(
@@ -163,7 +198,7 @@ class Scene3 extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                // Add your onTap code here
+                print( "Fullname is -"+fullname+ " | Uername or Email is -"+username+" | New Password is -"+newpassword+ " | Confirm Password is -"+confirmpassword);
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -252,7 +287,7 @@ class Scene3 extends StatelessWidget {
 }
 
 
-class MyApp3 extends StatelessWidget {
+class _MyApp3State extends State<MyApp3> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

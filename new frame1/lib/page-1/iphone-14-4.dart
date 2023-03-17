@@ -4,7 +4,19 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+class MyApp4 extends StatefulWidget {
+  @override
+  _MyApp4State createState() => _MyApp4State();
+}
+
+
+
+
+
 class Scene4 extends StatelessWidget {
+  late String username;
+  late String password;
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -45,6 +57,11 @@ class Scene4 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
+               onChanged: (text){
+                 print(text);
+                 username=text;
+
+               },
                 decoration: InputDecoration(
                   labelText: 'Username / Email',
                   labelStyle: SafeGoogleFont(
@@ -68,6 +85,11 @@ class Scene4 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
+                onChanged: (text1){
+                  print(text1);
+                  password=text1;
+
+                },
                 decoration: InputDecoration(
                   labelText: 'Password',
                   labelStyle: SafeGoogleFont(
@@ -91,7 +113,7 @@ class Scene4 extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                // Add your onTap code here
+                print("Username/Email"+username+ " and the Password is"+password);// Add your onTap code here
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -151,9 +173,12 @@ class Scene4 extends StatelessWidget {
   }
 }
 
-class MyApp4 extends StatelessWidget {
+class _MyApp4State extends State<MyApp4> {
   @override
   Widget build(BuildContext context) {
+
+
+
     return MaterialApp(
       title: 'Flutter',
       debugShowCheckedModeBanner: false,
@@ -170,4 +195,12 @@ class MyApp4 extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
 }
+
+
