@@ -57,6 +57,9 @@ class Scene1 extends StatelessWidget {
                 // Function to call when button is pressed
               },
               style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 foregroundColor: Color(0xffa8573a), backgroundColor: Colors.white, padding: EdgeInsets.all(0.0),
                 fixedSize: Size(200 , 70), // Set text color of button
                 textStyle: TextStyle(
