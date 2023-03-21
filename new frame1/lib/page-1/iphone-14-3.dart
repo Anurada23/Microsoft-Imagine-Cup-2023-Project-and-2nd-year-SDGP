@@ -1,24 +1,27 @@
+// ignore_for_file: use_build_context_synchronously
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:email_validator/email_validator.dart';
+
+// import relevant page here i import sign in page here
+import 'iphone-14-2.dart';
 
 class MyApp3 extends StatefulWidget {
   @override
   _MyApp3State createState() => _MyApp3State();
 }
 
-
-
-
-
-
 class Scene3 extends StatelessWidget {
   late String fullname;
-  late String newpassword;
-  late String username;
   late String confirmpassword;
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmpasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +32,16 @@ class Scene3 extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // iphone145pQG (14:34)
-        padding: EdgeInsets.fromLTRB(48*fem, 74*fem, 48*fem, 77*fem),
+        padding: EdgeInsets.fromLTRB(48 * fem, 74 * fem, 48 * fem, 77 * fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        // ignore: prefer_const_constructors
+        decoration: BoxDecoration(
           color: Color(0xffffffff),
-          image: DecorationImage (
+          // ignore: prefer_const_constructors
+          image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage (
+            // ignore: prefer_const_constructors
+            image: AssetImage(
               'assets/page-1/images/screenshot-825-1-bg.png',
             ),
           ),
@@ -45,14 +51,14 @@ class Scene3 extends StatelessWidget {
           children: [
             Container(
               // registeruAp (22:8)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 50*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 50 * fem),
               child: Text(
                 'Register',
-                style: SafeGoogleFont (
+                style: SafeGoogleFont(
                   'Roboto Condensed',
-                  fontSize: 32*ffem,
+                  fontSize: 32 * ffem,
                   fontWeight: FontWeight.w700,
-                  height: 1.1725*ffem/fem,
+                  height: 1.1725 * ffem / fem,
                   color: Color(0xff292929),
                 ),
               ),
@@ -77,51 +83,15 @@ class Scene3 extends StatelessWidget {
             //     ),
             //   ),
             // ),
-        Container(
-          margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
-          child: TextField(
-            onChanged: (text1){
-              print(text1);
-              fullname=text1;
-
-            },
-            decoration: InputDecoration(
-              labelText: 'Full Name',
-              labelStyle: SafeGoogleFont(
-                'Roboto Condensed',
-                fontSize: 20 * ffem,
-                fontWeight: FontWeight.w400,
-                height: 1.1725 * ffem / fem,
-                color: Color(0xff807e7e),
-              ),
-              filled: true,
-              fillColor: Color(0xfff3efef),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(21 * fem),
-                borderSide: BorderSide.none,
-              ),
-              contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
-            ),
-          ),
-        ),
-
-
-
-
-
-
-
-
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
-                onChanged: (text2){
-                  print(text2);
-                  username=text2;
-
+                onChanged: (text1) {
+                  print(text1);
+                  fullname = text1;
                 },
                 decoration: InputDecoration(
-                  labelText: 'Username / Email',
+                  labelText: 'Full Name',
                   labelStyle: SafeGoogleFont(
                     'Roboto Condensed',
                     fontSize: 20 * ffem,
@@ -135,7 +105,8 @@ class Scene3 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(21 * fem),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
@@ -143,11 +114,33 @@ class Scene3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
-                onChanged: (text3){
-                  print(text3);
-                  newpassword=text3;
+                controller: emailController,
+                decoration: InputDecoration(
+                  // we can't use username cuz authentication working  through  email
+                  labelText: 'Email',
+                  labelStyle: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 20 * ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725 * ffem / fem,
+                    color: Color(0xff807e7e),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xfff3efef),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(21 * fem),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                ),
+              ),
+            ),
 
-                },
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
+              child: TextField(
+               controller: passwordController,
                 decoration: InputDecoration(
                   labelText: 'New Password',
                   labelStyle: SafeGoogleFont(
@@ -163,7 +156,8 @@ class Scene3 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(21 * fem),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
@@ -171,10 +165,9 @@ class Scene3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
-                onChanged: (text4){
+                onChanged: (text4) {
                   print(text4);
-                  confirmpassword=text4;
-
+                  confirmpassword = text4;
                 },
                 decoration: InputDecoration(
                   labelText: 'Confirm New Password',
@@ -191,41 +184,45 @@ class Scene3 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(21 * fem),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
 
             ElevatedButton(
-              onPressed: () {
-                print( "Fullname is -"+fullname+ " | Uername or Email is -"+username+" | New Password is -"+newpassword+ " | Confirm Password is -"+confirmpassword);
+              // add relevant error messages in flutter app
+              onPressed: () => {
+                if(!EmailValidator.validate(emailController.text)){
+                  print("Please enter a valid email")
+                }else if(passwordController.text.length<6){
+                    print("Please enter a valid password")
+                }else if(passwordController.text==confirmpassword){
+                    signUpWithEmailAndPassword(context),
+                }
+                else{
+                  print("password dose not match")
+                }
+               
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
                 elevation: MaterialStateProperty.all<double>(0),
                 fixedSize: MaterialStateProperty.all<Size>(Size(160, 50)),
-
-
               ),
               child: Center(
                 child: Text(
                   'SIGN UP',
-                  style: SafeGoogleFont (
+                  style: SafeGoogleFont(
                     'Roboto Condensed',
-                    fontSize: 32*ffem,
+                    fontSize: 32 * ffem,
                     fontWeight: FontWeight.w700,
-                    height: 1.1725*ffem/fem,
+                    height: 1.1725 * ffem / fem,
                     color: Color(0xff292929),
                   ),
                 ),
               ),
             ),
-
-
-
-
-
-
 
             // Container(
             //   // autogroupauxmWCY (Sj7AfFk3B2wuKr63hgauXM)
@@ -251,14 +248,14 @@ class Scene3 extends StatelessWidget {
             // ),
             Container(
               // haveanaccountloginnfr (22:9)
-              margin: EdgeInsets.fromLTRB(15*fem, 0*fem, 0*fem, 0*fem),
+              margin: EdgeInsets.fromLTRB(15 * fem, 0 * fem, 0 * fem, 0 * fem),
               child: RichText(
                 text: TextSpan(
-                  style: SafeGoogleFont (
+                  style: SafeGoogleFont(
                     'Roboto Condensed',
-                    fontSize: 20*ffem,
+                    fontSize: 20 * ffem,
                     fontWeight: FontWeight.w400,
-                    height: 1.1725*ffem/fem,
+                    height: 1.1725 * ffem / fem,
                     color: Color(0xffffffff),
                   ),
                   children: [
@@ -267,11 +264,11 @@ class Scene3 extends StatelessWidget {
                     ),
                     TextSpan(
                       text: 'Login',
-                      style: SafeGoogleFont (
+                      style: SafeGoogleFont(
                         'Roboto Condensed',
-                        fontSize: 20*ffem,
+                        fontSize: 20 * ffem,
                         fontWeight: FontWeight.w400,
-                        height: 1.1725*ffem/fem,
+                        height: 1.1725 * ffem / fem,
                         color: Color(0xffcc0a0a),
                       ),
                     ),
@@ -284,8 +281,25 @@ class Scene3 extends StatelessWidget {
       ),
     );
   }
+// methode for sign up 
+  Future<void> signUpWithEmailAndPassword(BuildContext context) async {
+    try {
+      final UserCredential authResult =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
+      );
+      // Handle successful sign-up here
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyApp2()),
+      );
+    } catch (e) {
+      // Handle sign-up errors here
+      print(e.toString());
+    }
+  }
 }
-
 
 class _MyApp3State extends State<MyApp3> {
   @override
@@ -301,7 +315,6 @@ class _MyApp3State extends State<MyApp3> {
       home: Scaffold(
         body: SingleChildScrollView(
           child: Scene3(),
-
         ),
       ),
     );

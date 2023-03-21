@@ -1,21 +1,24 @@
+// ignore_for_file: use_build_context_synchronously
+
+import 'package:email_validator/email_validator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+//change this to home page 
+import 'iphone-14-2.dart';
+
 class MyApp4 extends StatefulWidget {
   @override
   _MyApp4State createState() => _MyApp4State();
 }
 
-
-
-
-
 class Scene4 extends StatelessWidget {
-  late String username;
-  late String password;
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,14 +29,15 @@ class Scene4 extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // iphone146hdi (21:4)
-        padding: EdgeInsets.fromLTRB(56*fem, 175*fem, 40*fem, 83*fem),
+        padding: EdgeInsets.fromLTRB(56 * fem, 175 * fem, 40 * fem, 83 * fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration(
           color: Color(0xffffffff),
-          image: DecorationImage (
+          image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage (
-              'assets/page-1/images/screenshot-825-1-bg-bXn.png',
+            image: AssetImage(
+              //i change this image url cuz cant find previous image in assest
+              'assets/page-1/images/screenshot-825-1-bg.png',
             ),
           ),
         ),
@@ -42,14 +46,14 @@ class Scene4 extends StatelessWidget {
           children: [
             Container(
               // welcomenv4 (23:18)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 63*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 63 * fem),
               child: Text(
                 'Welcome..',
-                style: SafeGoogleFont (
+                style: SafeGoogleFont(
                   'Roboto Condensed',
-                  fontSize: 32*ffem,
+                  fontSize: 32 * ffem,
                   fontWeight: FontWeight.w700,
-                  height: 1.1725*ffem/fem,
+                  height: 1.1725 * ffem / fem,
                   color: Color(0xff292929),
                 ),
               ),
@@ -57,13 +61,10 @@ class Scene4 extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
-               onChanged: (text){
-                 print(text);
-                 username=text;
-
-               },
+                controller: emailController,
                 decoration: InputDecoration(
-                  labelText: 'Username / Email',
+                  // we cant authenticate using username so i add email only here
+                  labelText: 'Email',
                   labelStyle: SafeGoogleFont(
                     'Roboto Condensed',
                     fontSize: 20 * ffem,
@@ -77,19 +78,15 @@ class Scene4 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(21 * fem),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
-
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 57),
               child: TextField(
-                onChanged: (text1){
-                  print(text1);
-                  password=text1;
-
-                },
+                controller: passwordController,
                 decoration: InputDecoration(
                   labelText: 'Password',
                   labelStyle: SafeGoogleFont(
@@ -105,60 +102,61 @@ class Scene4 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(21 * fem),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(21 * fem, 23 * fem, 21 * fem, 16 * fem),
+                  contentPadding: EdgeInsets.fromLTRB(
+                      21 * fem, 23 * fem, 21 * fem, 16 * fem),
                 ),
               ),
             ),
-
-
             ElevatedButton(
-              onPressed: () {
-                print("Username/Email"+username+ " and the Password is"+password);// Add your onTap code here
+              onPressed: () => {
+                if (!EmailValidator.validate(emailController.text))
+                  {print("Please enter valid email address")}
+                else if (passwordController.text.length < 6)
+                  {print("Please enter valid password")}
+                else
+                  {signInWithEmailAndPassword(context)}
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
                 elevation: MaterialStateProperty.all<double>(0),
                 fixedSize: MaterialStateProperty.all<Size>(Size(160, 50)),
-
-
               ),
               child: Center(
                 child: Text(
                   'LOGIN',
-                  style: SafeGoogleFont (
+                  style: SafeGoogleFont(
                     'Roboto Condensed',
-                    fontSize: 32*ffem,
+                    fontSize: 32 * ffem,
                     fontWeight: FontWeight.w700,
-                    height: 1.1725*ffem/fem,
+                    height: 1.1725 * ffem / fem,
                     color: Color(0xff292929),
                   ),
                 ),
               ),
             ),
-
             Container(
               // alreadyhaveanaccountsignupwpt (23:22)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
               child: RichText(
                 text: TextSpan(
-                  style: SafeGoogleFont (
+                  style: SafeGoogleFont(
                     'Roboto Condensed',
-                    fontSize: 20*ffem,
+                    fontSize: 20 * ffem,
                     fontWeight: FontWeight.w400,
-                    height: 1.1725*ffem/fem,
-                    color: Color(0xffffffff),
+                    height: 1.1725 * ffem / fem,
+                    color: Color.fromARGB(255, 0, 0, 0),
                   ),
                   children: [
-                    TextSpan(
-                      text: 'Already have an account? ',
+                    const TextSpan(
+                      text: "Don't have an account? ",
                     ),
                     TextSpan(
                       text: 'Sign up',
-                      style: SafeGoogleFont (
+                      style: SafeGoogleFont(
                         'Roboto Condensed',
-                        fontSize: 20*ffem,
+                        fontSize: 20 * ffem,
                         fontWeight: FontWeight.w400,
-                        height: 1.1725*ffem/fem,
+                        height: 1.1725 * ffem / fem,
                         color: Color(0xffcc0a0a),
                       ),
                     ),
@@ -171,14 +169,30 @@ class Scene4 extends StatelessWidget {
       ),
     );
   }
+// mwthode for sign in 
+  Future<void> signInWithEmailAndPassword(BuildContext context) async {
+    try {
+      final UserCredential authResult =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
+      );
+      // Handle successful sign-in here
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyApp2()),
+      );
+    } catch (e) {
+      // Handle sign-in errors here
+      // create relevant error in flutter app
+      print("user not found. Please signup and try again");
+    }
+  }
 }
 
 class _MyApp4State extends State<MyApp4> {
   @override
   Widget build(BuildContext context) {
-
-
-
     return MaterialApp(
       title: 'Flutter',
       debugShowCheckedModeBanner: false,
@@ -190,7 +204,6 @@ class _MyApp4State extends State<MyApp4> {
       home: Scaffold(
         body: SingleChildScrollView(
           child: Scene4(),
-
         ),
       ),
     );
@@ -202,5 +215,3 @@ class _MyApp4State extends State<MyApp4> {
     throw UnimplementedError();
   }
 }
-
-
