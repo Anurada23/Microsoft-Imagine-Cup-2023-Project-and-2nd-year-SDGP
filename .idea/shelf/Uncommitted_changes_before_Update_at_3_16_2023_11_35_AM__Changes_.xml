@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM_[Changes]" date="1678946754155" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM_[Changes]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 3/16/2023 11:35 AM [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" value="new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-    <option name="AFTER_PATH" value="new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM_[Changes]/buildOutputCleanup.lock" />
-  </binary>
-</changelist>
