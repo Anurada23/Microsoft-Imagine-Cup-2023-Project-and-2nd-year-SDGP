@@ -4,6 +4,9 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+import 'MainMenu.dart';
+import 'cameraScreen.dart';
+
 class Scene5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -121,34 +124,34 @@ class Scene5 extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              // images1zVN (46:46)
-              left: 0*fem,
-              top: 328*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 390*fem,
-                  height: 267*fem,
-                  child: Image.asset(
-                    'assets/page-1/images/images-1.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ),
+            // Positioned(
+            //   // images1zVN (46:46)
+            //   left: 0*fem,
+            //   top: 328*fem,
+            //   child: Align(
+            //     child: SizedBox(
+            //       width: 390*fem,
+            //       height: 267*fem,
+            //       child: Image.asset(
+            //         'assets/page-1/images/images-1.png',
+            //         fit: BoxFit.cover,
+            //       ),
+            //     ),
+            //   ),
+            // ),
             Positioned(
               // scanningXEQ (46:49)
-              left: 112*fem,
+              left: 135*fem,
               top: 166*fem,
               child: Align(
                 child: SizedBox(
                   width: 193*fem,
-                  height: 53*fem,
+                  height: 153*fem,
                   child: Text(
-                    'Scanning..',
+                    'Scanning Options',
                     style: SafeGoogleFont (
                       'Roboto Condensed',
-                      fontSize: 45*ffem,
+                      fontSize: 35*ffem,
                       fontWeight: FontWeight.w700,
                       height: 1.1725*ffem/fem,
                       color: Color(0xff000000),
@@ -159,8 +162,8 @@ class Scene5 extends StatelessWidget {
             ),
             Positioned(
               // rectangle4pDW (46:52)
-              left: 118*fem,
-              top: 720*fem,
+              left: 104*fem,
+              top: 490*fem,
               child: ElevatedButton(
                 onPressed: () {
                   // Add your onPressed logic here
@@ -171,8 +174,8 @@ class Scene5 extends StatelessWidget {
                   ), backgroundColor: Color(0xff817f7f),
                 ),
                 child: SizedBox(
-                  width: 130*fem,
-                  height: 48*fem,
+                  width: 160*fem,
+                  height: 66*fem,
                   child: Container(),
                 ),
               ),
@@ -185,7 +188,7 @@ class Scene5 extends StatelessWidget {
             Positioned(
               // backjrG (46:53)
               left: 160*fem,
-              top: 725*fem,
+              top: 504*fem,
               child: Align(
                 child: SizedBox(
                   width: 90*fem,
@@ -204,14 +207,40 @@ class Scene5 extends StatelessWidget {
               ),
             ),
 
+            Positioned(
+              // pleasesteadythecameraandholdit (46:54)
+              left: 58*fem,
+              top: 588*fem,
+              child: Align(
+                child: SizedBox(
+                  width: 294*fem,
+                  height: 47*fem,
+                  child: Text(
+                    'Upload a excisting photo from a folder ',
+                    style: SafeGoogleFont (
+                      'Roboto Condensed',
+                      fontSize: 20*ffem,
+                      fontWeight: FontWeight.w400,
+                      height: 1.1725*ffem/fem,
+                      color: Color(0xff807e7e),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
 
             Positioned(
               // rectangle4pDW (46:52)
-              left: 118*fem,
-              top: 785*fem,
+              left: 104*fem,
+              top: 685*fem,
               child: ElevatedButton(
                 onPressed: () {
-                  // Add your onPressed logic here
+                  //  onPressed logic here
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyAppMM())
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -219,8 +248,8 @@ class Scene5 extends StatelessWidget {
                   ), backgroundColor: Color(0xff817f7f),
                 ),
                 child: SizedBox(
-                  width: 131*fem,
-                  height: 48*fem,
+                  width: 160*fem,
+                  height: 66*fem,
                 ),
               ),
             ),
@@ -228,16 +257,16 @@ class Scene5 extends StatelessWidget {
             Positioned(
               // backjrG (46:53)
               left: 168*fem,
-              top: 788*fem,
+              top: 698*fem,
               child: Align(
                 child: SizedBox(
-                  width: 62*fem,
+                  width: 80*fem,
                   height: 38*fem,
                   child: Text(
                     'Back',
                     style: SafeGoogleFont (
                       'Roboto Condensed',
-                      fontSize: 32*ffem,
+                      fontSize: 35*ffem,
                       fontWeight: FontWeight.w400,
                       height: 1.1725*ffem/fem,
                       color: Color(0xfff3efef),
@@ -249,13 +278,13 @@ class Scene5 extends StatelessWidget {
             Positioned(
               // pleasesteadythecameraandholdit (46:54)
               left: 58*fem,
-              top: 640*fem,
+              top: 380*fem,
               child: Align(
                 child: SizedBox(
                   width: 294*fem,
                   height: 47*fem,
                   child: Text(
-                    'Please steady the camera and \nhold it in a place with a good lighting ',
+                    'Note - Please steady the camera and \nhold it in a place with a good lighting ',
                     style: SafeGoogleFont (
                       'Roboto Condensed',
                       fontSize: 20*ffem,
@@ -269,52 +298,85 @@ class Scene5 extends StatelessWidget {
             ),
             Positioned(
               // icontimehistoryjjn (46:55)
-              left: 172.7573242188*fem,
-              top: 235*fem,
+              left: 104*fem,
+              top: 280*fem,
               child: Align(
-                child: SizedBox(
-                  width: 54*fem,
-                  height: 54*fem,
-                  child: Image.asset(
-                    'assets/page-1/images/icon-time-history.png',
-                    width: 54*fem,
-                    height: 54*fem,
+                child: ElevatedButton(
+
+                    onPressed: () {
+                      //  onPressed logic here
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MainScreen())
+                      );
+                    },
+
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10*fem),
+                    ), backgroundColor: Color(0xff817f7f),
+                  ),
+                  child: SizedBox(
+                    width: 160*fem,
+                    height: 66*fem,
                   ),
                 ),
               ),
             ),
+
             Positioned(
-              // iconvideoEwS (48:74)
-              left: 361*fem,
-              top: 336*fem,
+              // backjrG (46:53)
+              left: 148*fem,
+              top: 290*fem,
               child: Align(
                 child: SizedBox(
-                  width: 20.5*fem,
-                  height: 17*fem,
-                  child: Image.asset(
-                    'assets/page-1/images/icon-video.png',
-                    width: 20.5*fem,
-                    height: 17*fem,
+                  width: 108*fem,
+                  height: 38*fem,
+                  child: Text(
+                    'Camera',
+                    style: SafeGoogleFont (
+                      'Roboto Condensed',
+                      fontSize: 35*ffem,
+                      fontWeight: FontWeight.w400,
+                      height: 1.1725*ffem/fem,
+                      color: Color(0xfff3efef),
+                    ),
                   ),
                 ),
               ),
             ),
-            Positioned(
-              // iconarrowsdiagonalsA4Q (48:77)
-              left: 361*fem,
-              top: 563.8760986328*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 21*fem,
-                  height: 21*fem,
-                  child: Image.asset(
-                    'assets/page-1/images/icon-arrows-diagonals.png',
-                    width: 21*fem,
-                    height: 21*fem,
-                  ),
-                ),
-              ),
-            ),
+            // Positioned(
+            //   // iconvideoEwS (48:74)
+            //   left: 361*fem,
+            //   top: 336*fem,
+            //   child: Align(
+            //     child: SizedBox(
+            //       width: 20.5*fem,
+            //       height: 17*fem,
+            //       child: Image.asset(
+            //         'assets/page-1/images/icon-video.png',
+            //         width: 20.5*fem,
+            //         height: 17*fem,
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   // iconarrowsdiagonalsA4Q (48:77)
+            //   left: 361*fem,
+            //   top: 563.8760986328*fem,
+            //   child: Align(
+            //     child: SizedBox(
+            //       width: 21*fem,
+            //       height: 21*fem,
+            //       child: Image.asset(
+            //         'assets/page-1/images/icon-arrows-diagonals.png',
+            //         width: 21*fem,
+            //         height: 21*fem,
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

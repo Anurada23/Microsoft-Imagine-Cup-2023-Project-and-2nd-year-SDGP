@@ -4,45 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="re-make after the authentication add">
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/cameraScreen.dart" afterDir="false" />
+    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="re-make after the camera add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/dartpad/web_plugin_registrant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/_composite.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/gen_dart_plugin_registrant.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/gen_localizations.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/AssetManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/FontManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/NOTICES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-verified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/rectangle-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/screenshot-812-1-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-4.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/Flutter-Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/Flutter-Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/windows/flutter/ephemeral/generated_config.cmake" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678527943529</updated>
     </task>
+    <task id="LOCAL-00001" summary="re-make after the camera add">
+      <created>1679708664802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679708664802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="re-make after the camera add" />
+    <option name="LAST_COMMIT_MESSAGE" value="re-make after the camera add" />
   </component>
 </project>
