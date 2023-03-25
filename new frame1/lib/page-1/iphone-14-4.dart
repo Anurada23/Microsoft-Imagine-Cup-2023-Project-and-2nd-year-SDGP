@@ -7,6 +7,7 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/MainMenu.dart';
 
 //change this to home page 
 import 'iphone-14-2.dart';
@@ -115,6 +116,7 @@ class Scene4 extends StatelessWidget {
                   {print("Please enter valid password")}
                 else
                   {signInWithEmailAndPassword(context)}
+
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -180,9 +182,10 @@ class Scene4 extends StatelessWidget {
       // Handle successful sign-in here
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => MyApp2()),
+        MaterialPageRoute(builder: (context) => MyAppMM()),
       );
     } catch (e) {
+      print(e);
       // Handle sign-in errors here
       // create relevant error in flutter app
       print("user not found. Please signup and try again");

@@ -7,6 +7,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:email_validator/email_validator.dart';
+import 'package:myapp/page-1/MainMenu.dart';
 
 // import relevant page here i import sign in page here
 import 'iphone-14-2.dart';
@@ -292,7 +293,7 @@ class Scene3 extends StatelessWidget {
       // Handle successful sign-up here
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => MyApp2()),
+        MaterialPageRoute(builder: (context) => MyAppMM()),
       );
     } catch (e) {
       // Handle sign-up errors here

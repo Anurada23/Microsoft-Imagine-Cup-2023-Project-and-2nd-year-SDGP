@@ -4,52 +4,57 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Code-Of-Duty.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_11_35_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="re-make after the authentication add">
+      <change afterPath="$PROJECT_DIR$/new frame1/lib/page-1/cameraScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/dartpad/web_plugin_registrant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/7.4/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/_composite.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/f566e395026867aa7d9b35e5c18c84e6/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/icon-verified.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/rectangle-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/assets/page-1/images/screenshot-812-1-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-4.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/Flutter-Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/Flutter-Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/macos/Flutter/ephemeral/flutter_export_environment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/windows/flutter/ephemeral/generated_config.cmake" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,17 +73,24 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/Desktop/2ND Year/sdgp/new frame1&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true">
       <option name="filePath" value="$PROJECT_DIR$/new frame1/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter.main.dart" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,6 +107,11 @@
     <option name="TAB_STATES">
       <map>
         <entry key="7ecd9d8b-feda-4bc3-9659-3a11c9baff1f">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
           <value>
             <State />
           </value>

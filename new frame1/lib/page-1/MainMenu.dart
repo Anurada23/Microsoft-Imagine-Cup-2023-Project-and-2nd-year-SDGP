@@ -4,6 +4,9 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+import 'cameraScreen.dart';
+
+
 class SceneMM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -160,7 +163,12 @@ class SceneMM extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          // TODO: Implement scan button functionality
+                          // TODO: Implement scan button functionality //
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => MainScreen())
+                          );
+
                         },
                         child: SizedBox(
                           width: 360*fem,

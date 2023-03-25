@@ -1,12 +1,20 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/cameraScreen.dart';
+import 'package:myapp/page-1/iphone-14-5.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/iphone-14-1.dart';
 import 'package:myapp/page-1/iphone-14-2.dart';
 
-void main() => runApp(MyApp());
+void main() async{
+	WidgetsFlutterBinding.ensureInitialized();
+	await Firebase.initializeApp();
+	runApp(MyApp());
+}
+
 
 class MyApp extends StatelessWidget {
 	@override
@@ -21,7 +29,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child: Scene1(),
+		 	child: Scene1(),//Scene1(),
 
 		 ),
 		  ),

@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class Scene5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -45,11 +45,11 @@ class Scene extends StatelessWidget {
             Positioned(
               // rectangle22vrt (46:50)
               left: 0*fem,
-              top: 774*fem,
+              top: 740*fem,
               child: Align(
                 child: SizedBox(
                   width: 390*fem,
-                  height: 70*fem,
+                  height: 50*fem,
                   child: Container(
                     decoration: BoxDecoration (
                       color: Color(0xff807e7e),
@@ -82,11 +82,19 @@ class Scene extends StatelessWidget {
               child: Align(
                 child: SizedBox(
                   width: 390*fem,
-                  height: 194*fem,
+                  height: 145*fem,
                   child: Container(
                     decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
+                      borderRadius: BorderRadius.only(
+
+                          topLeft: Radius.circular(0),
+                          topRight: Radius.circular(0),
+                          bottomLeft: Radius.circular(50*fem),
+                          bottomRight: Radius.circular(50*fem),
+
+                      ),   // circular(50*fem),
                       color: Color(0xffdfdddd),
+
                     ),
                   ),
                 ),
@@ -152,24 +160,75 @@ class Scene extends StatelessWidget {
             Positioned(
               // rectangle4pDW (46:52)
               left: 118*fem,
-              top: 750*fem,
+              top: 720*fem,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Add your onPressed logic here
+                },
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10*fem),
+                  ), backgroundColor: Color(0xff817f7f),
+                ),
+                child: SizedBox(
+                  width: 130*fem,
+                  height: 48*fem,
+                  child: Container(),
+                ),
+              ),
+            ),
+            // the ElevatedButton is used as a wrapper around the SizedBox widget. The onPressed property of the `ElevatedButton
+
+
+
+
+            Positioned(
+              // backjrG (46:53)
+              left: 160*fem,
+              top: 725*fem,
               child: Align(
                 child: SizedBox(
-                  width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff817f7f),
+                  width: 90*fem,
+                  height: 38*fem,
+                  child: Text(
+                    'Upload',
+                    style: SafeGoogleFont (
+                      'Roboto Condensed',
+                      fontSize: 32*ffem,
+                      fontWeight: FontWeight.w400,
+                      height: 1.1725*ffem/fem,
+                      color: Color(0xfff3efef),
                     ),
                   ),
                 ),
               ),
             ),
+
+
+            Positioned(
+              // rectangle4pDW (46:52)
+              left: 118*fem,
+              top: 785*fem,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Add your onPressed logic here
+                },
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10*fem),
+                  ), backgroundColor: Color(0xff817f7f),
+                ),
+                child: SizedBox(
+                  width: 131*fem,
+                  height: 48*fem,
+                ),
+              ),
+            ),
+
             Positioned(
               // backjrG (46:53)
               left: 168*fem,
-              top: 753*fem,
+              top: 788*fem,
               child: Align(
                 child: SizedBox(
                   width: 62*fem,
