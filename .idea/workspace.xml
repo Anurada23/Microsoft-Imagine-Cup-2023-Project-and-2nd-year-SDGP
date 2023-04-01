@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="re-make after the camera add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/iphone-14-5.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
