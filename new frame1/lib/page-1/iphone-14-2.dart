@@ -4,8 +4,8 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-import 'iphone-14-3.dart';
-import 'iphone-14-4.dart';
+import 'signUpPage.dart';
+import 'signInPage.dart';
 
 class Scene2 extends StatelessWidget {
   @override
