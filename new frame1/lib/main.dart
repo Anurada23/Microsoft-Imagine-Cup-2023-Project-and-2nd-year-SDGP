@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child: MyApp5(),//Scene1(),
+		 	child: Scene1(),//Scene1(),
 
 		 ),
 		  ),
