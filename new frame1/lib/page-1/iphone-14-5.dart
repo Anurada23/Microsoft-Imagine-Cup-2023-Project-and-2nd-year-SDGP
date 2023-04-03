@@ -1,13 +1,42 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:flutter/services.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:image_picker/image_picker.dart';
 import 'MainMenu.dart';
 import 'cameraScreen.dart';
 
-class Scene5 extends StatelessWidget {
+
+class MyApp5 extends StatefulWidget {
+  @override
+  _MyApp5State createState() => _MyApp5State();
+}
+
+
+class _MyApp5State extends State<MyApp5> {
+  File? image1;
+
+
+  Future pickImage() async{
+
+    try{
+      final image1 = await ImagePicker().pickImage(source: ImageSource.gallery);
+      if (image1 == null) return;
+      final imageTemporary = File( image1.path);
+      this.image1= imageTemporary;
+      setState(() {
+        this.image1 = imageTemporary;
+      });
+
+    }on PlatformException catch (e){
+      print("Failed to pick image: $e");
+    }
+
+  }
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -90,10 +119,10 @@ class Scene5 extends StatelessWidget {
                     decoration: BoxDecoration (
                       borderRadius: BorderRadius.only(
 
-                          topLeft: Radius.circular(0),
-                          topRight: Radius.circular(0),
-                          bottomLeft: Radius.circular(50*fem),
-                          bottomRight: Radius.circular(50*fem),
+                        topLeft: Radius.circular(0),
+                        topRight: Radius.circular(0),
+                        bottomLeft: Radius.circular(50*fem),
+                        bottomRight: Radius.circular(50*fem),
 
                       ),   // circular(50*fem),
                       color: Color(0xffdfdddd),
@@ -166,7 +195,7 @@ class Scene5 extends StatelessWidget {
               top: 490*fem,
               child: ElevatedButton(
                 onPressed: () {
-                  // Add your onPressed logic here
+                  pickImage();
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -303,13 +332,13 @@ class Scene5 extends StatelessWidget {
               child: Align(
                 child: ElevatedButton(
 
-                    onPressed: () {
-                      //  onPressed logic here
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MainScreen())
-                      );
-                    },
+                  onPressed: () {
+                    //  onPressed logic here
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MainScreen())
+                    );
+                  },
 
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
