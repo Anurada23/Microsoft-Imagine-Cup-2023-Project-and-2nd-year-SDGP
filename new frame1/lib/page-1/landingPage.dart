@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/main.dart';
-import 'package:myapp/page-1/iphone-14-2.dart';
+import 'package:myapp/page-1/Signup_login.dart';
 import 'package:myapp/utils.dart';
 
 class Scene1 extends StatelessWidget {

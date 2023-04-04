@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 import 'signUpPage.dart';
-import 'signInPage.dart';
+import 'Login.dart';
 
 class Scene2 extends StatelessWidget {
   @override

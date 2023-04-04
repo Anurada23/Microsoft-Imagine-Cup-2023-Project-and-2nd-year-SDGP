@@ -7,7 +7,7 @@ import 'package:myapp/page-1/cameraScreen.dart';
 import 'package:myapp/page-1/imagePicker.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/landingPage.dart';
-import 'package:myapp/page-1/iphone-14-2.dart';
+import 'package:myapp/page-1/Signup_login.dart';
 
 void main() async{
 	WidgetsFlutterBinding.ensureInitialized();
