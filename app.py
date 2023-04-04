@@ -23,10 +23,11 @@ def predict():
         # No file was uploaded
         return 'No file uploaded '
 
-    image_file = request.files['image']
+    image_file = request.files['file']
     if image_file.filename == '':
         # No file was selected
         return 'No file selected'
+    
 
     if image_file and allowed_file(image_file.filename):
         model = tf.keras.models.load_model(model_path)
@@ -51,8 +52,7 @@ def predict():
             return klass
     
     
-# def index():
-#     return "hello world"
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
