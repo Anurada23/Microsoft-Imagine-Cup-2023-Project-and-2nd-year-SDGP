@@ -4,9 +4,9 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/cameraScreen.dart';
-import 'package:myapp/page-1/iphone-14-5.dart';
+import 'package:myapp/page-1/imagePicker.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/iphone-14-1.dart';
+import 'package:myapp/page-1/landingPage.dart';
 import 'package:myapp/page-1/iphone-14-2.dart';
 
 void main() async{

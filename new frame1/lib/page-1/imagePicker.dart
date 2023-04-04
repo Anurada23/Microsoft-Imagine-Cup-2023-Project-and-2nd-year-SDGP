@@ -9,6 +9,8 @@ import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
 import 'MainMenu.dart';
 import 'cameraScreen.dart';
+import 'package:http/http.dart' as http;
+import 'package:path/path.dart' show basename;
 
 
 class MyApp5 extends StatefulWidget {
@@ -21,22 +23,52 @@ class _MyApp5State extends State<MyApp5> {
   File? image1;
 
 
-  Future pickImage() async{
+ Future<void> sendImage(File imageFile) async {
+  var stream = http.ByteStream(imageFile.openRead().cast());
+  var length = await imageFile.length();
 
-    try{
-      final image1 = await ImagePicker().pickImage(source: ImageSource.gallery);
-      if (image1 == null) return;
-      final imageTemporary = File( image1.path);
-      this.image1= imageTemporary;
-      setState(() {
-        this.image1 = imageTemporary;
-      });
+  var uri = Uri.parse('http://192.168.8.134:5000/predict');
+  var request = http.MultipartRequest("POST", uri);
 
-    }on PlatformException catch (e){
-      print("Failed to pick image: $e");
-    }
+  var multipartFile = http.MultipartFile(
+    'file',
+    stream,
+    length,
+    // filename: basename(imageFile.path),
+  );
+  request.files.add(multipartFile);
 
+  var response = await request.send();
+  if (response.statusCode == 200) {
+    String result = await response.stream.bytesToString();
+    print(result);
+    // Navigate to a new screen to display the prediction result
+  } else {
+    throw Exception('Failed to predict image');
   }
+}
+
+bool _isImagePickerActive = false;
+
+Future<void> pickImage() async {
+  if (_isImagePickerActive) return; // Return if image picker is already active
+  _isImagePickerActive = true; // Set flag to indicate image picker is active
+  try {
+    final imagePicker = ImagePicker();
+    final pickedFile = await imagePicker.pickImage(source: ImageSource.gallery);
+    if (pickedFile == null) return;
+
+    final imageFile = File(pickedFile.path);
+    await sendImage(imageFile);
+  } on PlatformException catch (e) {
+    print("Failed to pick image: $e");
+  } finally {
+    _isImagePickerActive = false; // Reset flag after image picking is complete or cancelled
+  }
+}
+
+
+  
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
