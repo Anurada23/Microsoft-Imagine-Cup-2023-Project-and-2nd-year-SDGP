@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment=" polish 2">
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Onycholysis.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Onycholysis.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Onycholysistrt.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Onycholysistrt.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680691015496</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=" polish 2">
+      <created>1680691783847</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680691783847</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,32 +243,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>352</line>
+          <line>353</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>326</line>
+          <line>328</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>226</line>
+          <line>228</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>197</line>
+          <line>199</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>251</line>
+          <line>253</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
-          <line>276</line>
+          <line>278</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>

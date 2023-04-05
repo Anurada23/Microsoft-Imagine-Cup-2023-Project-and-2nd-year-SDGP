@@ -515,11 +515,11 @@ class SceneTips extends StatelessWidget {
             ),
             Positioned(
               // psoriasispsJ (1:25)
-              left: 140*fem,
+              left: 129*fem,
               top: 725*fem,
               child: Align(
                 child: SizedBox(
-                  width: 110*fem,
+                  width: 140*fem,
                   height: 36*fem,
                   child: Text(
                     'onycholysis',
