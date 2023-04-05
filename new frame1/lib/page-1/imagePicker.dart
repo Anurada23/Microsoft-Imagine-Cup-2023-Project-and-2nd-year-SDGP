@@ -5,6 +5,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/Clubbing.dart';
+import 'package:myapp/page-1/Muehrckresline.dart';
+import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
 import 'Blackline.dart';
@@ -61,21 +64,21 @@ class _MyApp5State extends State<MyApp5> {
         // late String disease6="terry's nail";
         // late String disease7="white spot";
 
-        return "All three strings are equal.";
+        return "beau's line detected";
       } else if (result== disease2) {
         return SceneBL();
       } else if (result== disease3) {
-        return "The second string is the largest.";
+        return SceneC();
       }else if (result== disease4) {
-        return "The second string is the largest.";
+        return SceneML();
       }else if (result== disease5) {
-        return "The second string is the largest.";
+        return "onycholysis detected";
       }else if (result== disease6) {
-        return "The second string is the largest.";
+        return "Terrys nail detected";
       }else if (result== disease7) {
-        return "The second string is the largest.";}
+        return SceneWS();}
       else {
-        return "The third string is the largest.";
+        return "This means non of the diseases above has been selected";
       }
     }
   } else {
