@@ -13,6 +13,8 @@ import 'package:image_picker/image_picker.dart';
 import 'Blackline.dart';
 import 'MainMenu.dart';
 import 'Onycholysistrt.dart';
+
+import 'TerrysNailtrt.dart';
 import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' show basename;
@@ -57,15 +59,7 @@ class _MyApp5State extends State<MyApp5> {
     // Navigate to a new screen to display the prediction result
     Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
       if (result== disease1 ) {
-        // late String disease1="beau's line";
-        // late String disease2="black line";
-        // late String disease3="clubbing";
-        // late String disease4="muehrck-e's lines";
-        // late String disease5="onycholysis";
-        // late String disease6="terry's nail";
-        // late String disease7="white spot";
-
-        return "beau's line detected";
+        return SceneBL();
       } else if (result== disease2) {
         return SceneBL();
       } else if (result== disease3) {
@@ -75,7 +69,7 @@ class _MyApp5State extends State<MyApp5> {
       }else if (result== disease5) {
         return SceneON();
       }else if (result== disease6) {
-        return "Terrys nail detected";
+        return SceneTN();
       }else if (result== disease7) {
         return SceneWS();}
       else {
