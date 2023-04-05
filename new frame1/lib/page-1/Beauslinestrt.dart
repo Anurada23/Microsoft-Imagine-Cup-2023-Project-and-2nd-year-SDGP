@@ -6,7 +6,7 @@ import 'package:myapp/utils.dart';
 
 import 'MainMenu.dart';
 
-class SceneBL extends StatelessWidget {
+class SceneBELT extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -269,7 +269,7 @@ class SceneBL extends StatelessWidget {
   }
 }
 
-class MyAppBL extends StatelessWidget {
+class MyAppBELT extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -282,7 +282,7 @@ class MyAppBL extends StatelessWidget {
       //home:Scene(),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: SceneBL(),//Scene1(),
+          child: SceneBELT(),//Scene1(),
 
         ),
       ),

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/Beauslinestrt.dart';
 import 'package:myapp/page-1/whitespottrt.dart';
 import 'package:myapp/utils.dart';
 
+import 'Blacklinetrt.dart';
 import 'Clubbingtrt.dart';
 import 'MainMenu.dart';
 import 'Muehrckeslinestrt.dart';
@@ -205,7 +207,7 @@ class SceneTips extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  MyAppMM())
+                      MaterialPageRoute(builder: (context) =>  MyAppWST())
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -261,10 +263,10 @@ class SceneTips extends StatelessWidget {
                   height: 234*fem,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(builder: (context) =>  MyAppWST()) //tama na
-                      // );
+                       Navigator.push(
+                           context,
+                          MaterialPageRoute(builder: (context) =>  MyAppWST()) //tama na
+                       );
                     },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
@@ -288,7 +290,7 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())// tama na
+                          MaterialPageRoute(builder: (context) => MyAppBELT())// tama na
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -388,7 +390,7 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())
+                          MaterialPageRoute(builder: (context) => MyAppBLT())
                       );
                     },
                     style: ElevatedButton.styleFrom(

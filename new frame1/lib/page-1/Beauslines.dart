@@ -12,7 +12,7 @@ import 'Muehrckeslinestrt.dart';
 import 'Onycholysistrt.dart';
 import 'imagePicker.dart';
 
-class SceneBL extends StatelessWidget {
+class SceneBEL extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -215,7 +215,7 @@ class SceneBL extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>MyAppBL()),
+                        MaterialPageRoute(builder: (context) =>MyAppBELT()),
                       );
                     },
                     child: Container(),
@@ -320,7 +320,7 @@ class SceneBL extends StatelessWidget {
     );
   }
 }
-class MyAppBL1 extends StatelessWidget {
+class MyAppBEL1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -333,7 +333,7 @@ class MyAppBL1 extends StatelessWidget {
       //home:Scene(),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: SceneBL(),//Scene1(),
+          child: SceneBEL(),//Scene1(),
 
         ),
       ),
