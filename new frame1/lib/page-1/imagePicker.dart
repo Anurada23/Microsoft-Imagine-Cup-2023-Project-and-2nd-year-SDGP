@@ -12,9 +12,11 @@ import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
 import 'Blackline.dart';
 import 'MainMenu.dart';
+import 'Onycholysis.dart';
 import 'Onycholysistrt.dart';
 
 import 'TerrysNailtrt.dart';
+import 'Terrysnail.dart';
 import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' show basename;
@@ -59,19 +61,19 @@ class _MyApp5State extends State<MyApp5> {
     // Navigate to a new screen to display the prediction result
     Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
       if (result== disease1 ) {
-        return SceneBL();
+        return MyAppBL1();
       } else if (result== disease2) {
-        return SceneBL();
+        return MyAppBL1();
       } else if (result== disease3) {
-        return SceneC();
+        return MyAppC1();
       }else if (result== disease4) {
-        return SceneML();
+        return MyAppML1();
       }else if (result== disease5) {
-        return SceneON();
+        return MyAppON1();
       }else if (result== disease6) {
-        return SceneTN();
+        return MyAppTN1();
       }else if (result== disease7) {
-        return SceneWS();}
+        return MyAppWS1();}
       else {
         return "This means non of the diseases above has been selected";
       }
