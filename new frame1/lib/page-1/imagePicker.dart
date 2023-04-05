@@ -12,6 +12,7 @@ import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
 import 'Blackline.dart';
 import 'MainMenu.dart';
+import 'Onycholysistrt.dart';
 import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' show basename;
@@ -72,7 +73,7 @@ class _MyApp5State extends State<MyApp5> {
       }else if (result== disease4) {
         return SceneML();
       }else if (result== disease5) {
-        return "onycholysis detected";
+        return SceneON();
       }else if (result== disease6) {
         return "Terrys nail detected";
       }else if (result== disease7) {

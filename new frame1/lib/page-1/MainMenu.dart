@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/tips.dart';
 import 'package:myapp/utils.dart';
 
 import 'cameraScreen.dart';
@@ -207,7 +208,10 @@ class SceneMM extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              // add your button onPressed logic here
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => MyAppTips())
+                              );
                             },
                             child: Text(
                               'Explore',
