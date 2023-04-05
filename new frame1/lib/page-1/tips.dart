@@ -207,7 +207,7 @@ class SceneTips extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  MyAppWST())
+                      MaterialPageRoute(builder: (context) =>  MyAppMM())
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -240,7 +240,7 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) =>  MyAppWST())
+                          MaterialPageRoute(builder: (context) =>  MyAppMM())
                       );
                     },
                     style: ElevatedButton.styleFrom(
