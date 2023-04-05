@@ -1,7 +1,5 @@
-name: myapp
-description: A exported flutter project from FUNCTION12
-
-
+name: login_page
+description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -21,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: '>=2.19.3 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -37,7 +35,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -65,60 +62,6 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
-  assets:
-    - assets/page-1/images/icon-chevron-bottom.png
-    - assets/page-1/images/icon-twitter.png
-    - assets/page-1/images/screenshot-1136-1.png
-    - assets/page-1/images/icon-facebook.png
-    - assets/page-1/images/images-1.png
-    - assets/page-1/images/screenshot-1136-2.png
-    - assets/page-1/images/screenshot-1139-1.png
-    - assets/page-1/images/screenshot-1137-1.png
-    - assets/page-1/images/icon-facebook-Efi.png
-    - assets/page-1/images/screenshot-1158-1.png
-    - assets/page-1/images/icon-circle.png
-    - assets/page-1/images/icon-time-history.png
-    - assets/page-1/images/icon-facebook-B1A.png
-    - assets/page-1/images/icon-twitter-gyW.png
-    - assets/page-1/images/icon-circle-RAQ.png
-    - assets/page-1/images/screenshot-844-1.png
-    - assets/page-1/images/icon-time-history-9MJ.png
-    - assets/page-1/images/icon-circle-73E.png
-    - assets/page-1/images/icon-instagram.png
-    - assets/page-1/images/vector.png
-    - assets/page-1/images/icon-mail.png
-    - assets/page-1/images/screenshot-1138-1.png
-    - assets/page-1/images/icon-video.png
-    - assets/page-1/images/icon-arrows-diagonals.png
-    - assets/page-1/images/screenshot-1158-2.png
-    - assets/page-1/images/icon-instagram-X6x.png
-    - assets/page-1/images/screenshot-1162-1.png
-    - assets/page-1/images/vector-SDv.png
-    - assets/page-1/images/screenshot-830-1.png
-    - assets/page-1/images/icon-verified.png
-    - assets/page-1/images/screenshot-845-1-bg.png
-    - assets/page-1/images/icon-chevron-bottom-QgQ.png
-    - assets/page-1/images/vector-w3N.png
-    - assets/page-1/images/screenshot-825-1-bg.png
-    - assets/page-1/images/icon-facebook-hKv.png
-    - assets/page-1/images/vector-Nbi.png
-    - assets/page-1/images/icon-circle-61v.png
-    - assets/page-1/images/vector-d44.png
-    - assets/page-1/images/icon-circle-GPa.png
-    - assets/page-1/images/screenshot-844-1-MQL.png
-    - assets/page-1/images/rectangle-1.png
-    - assets/page-1/images/screenshot-846-1.png
-    - assets/page-1/images/icon-circle-DSY.png
-    - assets/page-1/images/screenshot-826-1-bg.png
-    - assets/page-1/images/screenshot-1157-1.png
-    - assets/page-1/images/screenshot-812-1-bg.png
-    - assets/page-1/images/milad-fakurian-rlzryad5ikk-unsplash-1-bg.png
-    - assets/page-1/images/screenshot-825-1-bg-bXn.png
-    - assets/page-1/images/screenshot-829-1.png
-    - assets/page-1/images/screenshot-828-1.png
-    - assets/page-1/images/screenshot-1166-1.png
-    - assets/page-1/images/milad-fakurian-rlzryad5ikk-unsplash-1.png
-    - assets/page-1/images/milad-fakurian-rlzryad5ikk-unsplash-1-rVv.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
