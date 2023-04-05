@@ -21,6 +21,13 @@ class MyApp5 extends StatefulWidget {
 
 class _MyApp5State extends State<MyApp5> {
   File? image1;
+  late String disease1="beau's line";
+  late String disease2="black line";
+  late String disease3="clubbing";
+  late String disease4="muehrck-e's lines";
+  late String disease5="onycholysis";
+  late String disease6="terry's nail";
+  late String disease7="white spot";
 
 
  Future<void> sendImage(File imageFile) async {
@@ -43,6 +50,25 @@ class _MyApp5State extends State<MyApp5> {
     String result = await response.stream.bytesToString();
     print(result);
     // Navigate to a new screen to display the prediction result
+    String compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
+      if (result== disease1 ) {
+        return "All three strings are equal.";
+      } else if (result== disease2) {
+        return "The first string is the largest.";
+      } else if (result== disease3) {
+        return "The second string is the largest.";
+      }else if (result== disease4) {
+        return "The second string is the largest.";
+      }else if (result== disease5) {
+        return "The second string is the largest.";
+      }else if (result== disease6) {
+        return "The second string is the largest.";
+      }else if (result== disease7) {
+        return "The second string is the largest.";}
+      else {
+        return "The third string is the largest.";
+      }
+    }
   } else {
     throw Exception('Failed to predict image');
   }
