@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="polish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Whitespot.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Whitespot.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/whitespottrt.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/whitespottrt.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680673870545</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="polish">
+      <created>1680674556614</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680674556614</updated>
+    </task>
+    <task id="LOCAL-00011" summary="polish">
+      <created>1680674799827</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680674799827</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,12 +186,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/imagePicker.dart</url>
-          <line>44</line>
+          <line>47</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/imagePicker.dart</url>
-          <line>52</line>
+          <line>55</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -206,8 +221,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart</url>
-          <line>169</line>
+          <line>170</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>378</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>352</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>326</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>226</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>197</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

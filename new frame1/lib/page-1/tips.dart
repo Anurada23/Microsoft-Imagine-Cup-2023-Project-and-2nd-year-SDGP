@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/whitespottrt.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+import 'MainMenu.dart';
+
+class SceneTips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -123,10 +126,10 @@ class Scene extends StatelessWidget {
               child: Align(
                 child: SizedBox(
                   width: 390*fem,
-                  height: 165*fem,
+                  height: 103*fem,
                   child: Container(
                     decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
+                      borderRadius: BorderRadius.circular(0*fem),
                       color: Color(0xffdfdddd),
                     ),
                   ),
@@ -196,19 +199,27 @@ class Scene extends StatelessWidget {
               // backniL (1:12)
               left: 164*fem,
               top: 797*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 62*fem,
-                  height: 38*fem,
-                  child: Text(
-                    'Back',
-                    style: SafeGoogleFont (
-                      'Roboto Condensed',
-                      fontSize: 32*ffem,
-                      fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
-                      color: Color(0xffffffff),
-                    ),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>  MyAppMM())
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50*fem),
+                  ), backgroundColor: Color(0xff706f6f),
+                  padding: EdgeInsets.symmetric(horizontal: 20*fem, vertical: 10*fem),
+                ),
+                child: Text(
+                  'Back',
+                  style: SafeGoogleFont(
+                    'Roboto Condensed',
+                    fontSize: 32*ffem,
+                    fontWeight: FontWeight.w400,
+                    height: 1.1725*ffem/fem,
+                    color: Color(0xffffffff),
                   ),
                 ),
               ),
@@ -221,11 +232,19 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 359*fem,
                   height: 30*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xff706f6f),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>  MyAppWST())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ), backgroundColor: Color(0xff706f6f),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -238,11 +257,19 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 390*fem,
                   height: 234*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xfff3ddc7),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(builder: (context) =>  MyAppWST()) //tama na
+                      // );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ), backgroundColor: Color(0xfff3ddc7),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -255,11 +282,19 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 390*fem,
                   height: 234*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xff52079d),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppTips())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ), backgroundColor: Color(0xff52079d),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -272,11 +307,19 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 407*fem,
                   height: 221*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xff6f6f6e),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppTips())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ), backgroundColor: Color(0xff6f6f6e),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -289,11 +332,20 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 390*fem,
                   height: 211*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xffa2d4d9),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppTips())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ),
+                      primary: Color(0xffa2d4d9),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -306,11 +358,20 @@ class Scene extends StatelessWidget {
                 child: SizedBox(
                   width: 390*fem,
                   height: 168*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xff23a0ad),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppTips())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50*fem),
+                      ),
+                      primary: Color(0xff23a0ad),
                     ),
+                    child: SizedBox.shrink(),
                   ),
                 ),
               ),
@@ -318,15 +379,30 @@ class Scene extends StatelessWidget {
             Positioned(
               // rectangle20bBv (1:19)
               left: 0*fem,
-              top: 205*fem,
+              top: 222*fem,
               child: Align(
                 child: SizedBox(
-                  width: 407*fem,
-                  height: 105*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
-                      color: Color(0xffffffff),
+                  width: 400*fem,
+                  height: 100*fem,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppTips())
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(0),
+                          topRight: Radius.circular(0),
+                          bottomLeft: Radius.circular(50*fem),
+                          bottomRight: Radius.circular(50*fem),
+                        ),
+                      ), backgroundColor: Colors.white,
+                    ),
+                    child: Container(
+                      // child widget here
                     ),
                   ),
                 ),
@@ -446,7 +522,7 @@ class Scene extends StatelessWidget {
                   width: 110*fem,
                   height: 36*fem,
                   child: Text(
-                    'psoriasis',
+                    'onycholysis',
                     style: SafeGoogleFont (
                       'Roboto Condensed',
                       fontSize: 30*ffem,
@@ -468,7 +544,7 @@ class Scene extends StatelessWidget {
                   height: 42*fem,
                   child: Container(
                     decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
+                      borderRadius: BorderRadius.circular(0*fem),
                       color: Color(0xffcc0a0a),
                     ),
                   ),
@@ -497,6 +573,27 @@ class Scene extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class MyAppTips extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      //home:Scene(),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: SceneTips(),//Scene1(),
+
         ),
       ),
     );

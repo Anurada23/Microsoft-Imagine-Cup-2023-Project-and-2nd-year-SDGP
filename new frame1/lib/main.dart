@@ -8,6 +8,7 @@ import 'package:myapp/page-1/Muehrckresline.dart';
 import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/page-1/cameraScreen.dart';
 import 'package:myapp/page-1/imagePicker.dart';
+import 'package:myapp/page-1/tips.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/landingPage.dart';
 import 'package:myapp/page-1/Signup_login.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child:  SceneWS(),//Scene1(),
+		 	child: SceneTips(),//Scene1(),
 
 		 ),
 		  ),
