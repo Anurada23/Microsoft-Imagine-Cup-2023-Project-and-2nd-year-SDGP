@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/tips.dart';
 import 'package:myapp/utils.dart';
 
+import 'AbtUs.dart';
 import 'cameraScreen.dart';
 import 'imagePicker.dart';
 
@@ -158,7 +159,7 @@ class SceneMM extends StatelessWidget {
                       top: 163*fem,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.transparent,
+                          backgroundColor: Colors.transparent,
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25*fem),
@@ -237,7 +238,10 @@ class SceneMM extends StatelessWidget {
                           height: 150*fem,
                           child: ElevatedButton(
                             onPressed: () {
-                              // code to execute when the button is pressed
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) =>MyAppAB()),
+                              );
                             },
                             style: ElevatedButton.styleFrom(
                               primary: Colors.transparent, // set the button's background color
@@ -270,7 +274,8 @@ class SceneMM extends StatelessWidget {
                           height: 150 * fem,
                           child: ElevatedButton(
                             onPressed: () {
-                              // Handle button press
+                              // SceneA
+
                             },
                             style: ElevatedButton.styleFrom(
                               primary: Colors.transparent, // Change the background color to yellow
