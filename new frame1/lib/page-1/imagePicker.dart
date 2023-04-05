@@ -5,8 +5,12 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/Clubbing.dart';
+import 'package:myapp/page-1/Muehrckresline.dart';
+import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
+import 'Blackline.dart';
 import 'MainMenu.dart';
 import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
@@ -21,6 +25,13 @@ class MyApp5 extends StatefulWidget {
 
 class _MyApp5State extends State<MyApp5> {
   File? image1;
+  late String disease1="beau's line";
+  late String disease2="black line";
+  late String disease3="clubbing";
+  late String disease4="muehrck-e's lines";
+  late String disease5="onycholysis";
+  late String disease6="terry's nail";
+  late String disease7="white spot";
 
 
  Future<void> sendImage(File imageFile) async {
@@ -43,6 +54,33 @@ class _MyApp5State extends State<MyApp5> {
     String result = await response.stream.bytesToString();
     print(result);
     // Navigate to a new screen to display the prediction result
+    Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
+      if (result== disease1 ) {
+        // late String disease1="beau's line";
+        // late String disease2="black line";
+        // late String disease3="clubbing";
+        // late String disease4="muehrck-e's lines";
+        // late String disease5="onycholysis";
+        // late String disease6="terry's nail";
+        // late String disease7="white spot";
+
+        return "beau's line detected";
+      } else if (result== disease2) {
+        return SceneBL();
+      } else if (result== disease3) {
+        return SceneC();
+      }else if (result== disease4) {
+        return SceneML();
+      }else if (result== disease5) {
+        return "onycholysis detected";
+      }else if (result== disease6) {
+        return "Terrys nail detected";
+      }else if (result== disease7) {
+        return SceneWS();}
+      else {
+        return "This means non of the diseases above has been selected";
+      }
+    }
   } else {
     throw Exception('Failed to predict image');
   }

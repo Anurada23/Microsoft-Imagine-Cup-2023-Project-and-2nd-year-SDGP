@@ -4,7 +4,9 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+import 'MainMenu.dart';
+
+class SceneMLT extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -53,48 +55,53 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              // rectangle26m76 (195:12)
-              left: 125*fem,
-              top: 762*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
+        Positioned(
+          // rectangle26m76 (195:12) // back box
+          left: 125 * fem,
+          top: 762 * fem,
+          child: SizedBox(
+            width: 159 * fem,
+            height: 48 * fem,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10 * fem),
+                ),
+                backgroundColor: Color(0xff000000),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyAppMM()),
+                );
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 62 * fem,
+                    height: 38 * fem,
+                    child: Text(
+                      'Back',
+                      style: SafeGoogleFont(
+                        'Roboto Condensed',
+                        fontSize: 32 * ffem,
+                        fontWeight: FontWeight.w400,
+                        height: 1.1725 * ffem / fem,
+                        color: Color(0xff586062),
+                      ),
                     ),
                   ),
-                ),
+                  Container(),
+                ],
               ),
             ),
-            Positioned(
-              // backUnC (195:14)
-              left: 177*fem,
-              top: 767*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 62*fem,
-                  height: 38*fem,
-                  child: Text(
-                    'Back',
-                    style: SafeGoogleFont (
-                      'Roboto Condensed',
-                      fontSize: 32*ffem,
-                      fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
-                      color: Color(0xff586062),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+          ),
+        ),
             Positioned(
               // gotothemainmenuNsa (195:15)
               left: 125*fem,
-              top: 727*fem,
+              top: 717*fem,
               child: Align(
                 child: SizedBox(
                   width: 164*fem,
@@ -115,7 +122,7 @@ class Scene extends StatelessWidget {
             Positioned(
               // backgroundUvc (195:16)
               left: 35*fem,
-              top: 91*fem,
+              top: 99*fem,
               child: Align(
                 child: SizedBox(
                   width: 94*fem,
@@ -157,7 +164,7 @@ class Scene extends StatelessWidget {
             Positioned(
               // lungcanceradiseasethatdevelops (195:18)
               left: 18*fem,
-              top: 194*fem,
+              top: 212*fem,
               child: Align(
                 child: SizedBox(
                   width: 368*fem,
@@ -256,6 +263,27 @@ class Scene extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class MyAppMLT extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      //home:Scene(),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: SceneMLT(),
+
         ),
       ),
     );

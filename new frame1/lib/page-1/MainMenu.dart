@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 import 'cameraScreen.dart';
+import 'imagePicker.dart';
 
 
 class SceneMM extends StatelessWidget {
@@ -166,7 +167,7 @@ class SceneMM extends StatelessWidget {
                           // TODO: Implement scan button functionality //
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => MainScreen())
+                              MaterialPageRoute(builder: (context) =>MyApp5 ())
                           );
 
                         },

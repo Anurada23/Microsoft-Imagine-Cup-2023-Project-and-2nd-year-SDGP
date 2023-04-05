@@ -4,7 +4,10 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+import 'Muehrckeslinestrt.dart';
+import 'imagePicker.dart';
+
+class SceneML extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -46,7 +49,14 @@ class Scene extends StatelessWidget {
                   height: 100*fem,
                   child: Container(
                     decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(50*fem),
+                        borderRadius: BorderRadius.only(
+
+                          topLeft: Radius.circular(0),
+                          topRight: Radius.circular(0),
+                          bottomLeft: Radius.circular(50*fem),
+                          bottomRight: Radius.circular(50*fem),
+
+                        ),
                       color: Color(0xffd9d9d9),
                     ),
                   ),
@@ -55,8 +65,8 @@ class Scene extends StatelessWidget {
             ),
             Positioned(
               // resultsqtU (51:91)
-              left: 36*fem,
-              top: 9*fem,
+              left: 146*fem,
+              top: 39*fem,
               child: Align(
                 child: SizedBox(
                   width: 96*fem,
@@ -116,23 +126,31 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              // rectangle24JQg (51:94)
-              left: 90*fem,
-              top: 281*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 229*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff090909),
-                    ),
-                  ),
+        Positioned(
+          // rectangle24JQg (51:94)   //scan again
+          left: 90*fem,
+          top: 281*fem,
+          child: Align(
+            child: SizedBox(
+              width: 229*fem,
+              height: 48*fem,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10*fem),
+                  ), backgroundColor: Color(0xff090909),
                 ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp5()),
+                  );
+                },
+                child: Container(),
               ),
             ),
+          ),
+        ),
             Positioned(
               // scanagainp88 (51:95)
               left: 137*fem,
@@ -175,44 +193,63 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              // rectangle23vKa (51:97)
-              left: 125*fem,
-              top: 633*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
+        Positioned(
+          // rectangle23vKa (51:97) // treatments
+          left: 125*fem,
+          top: 633*fem,
+          child: Align(
+            child: SizedBox(
+              width: 159*fem,
+              height: 58*fem,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10*fem),
+                  ), backgroundColor: Color(0xff000000),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>MyAppMLT()),
+                  );
+                },
+                child: Container(),
+              ),
+            ),
+          ),
+        ),
+          Positioned(
+            // rectangle26bwW (51:98) // back
+            left: 125*fem,
+            top: 762*fem,
+            child: Align(
+              child: SizedBox(
+                width: 159*fem,
+                height: 48*fem,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
-                    ),
+                    ), backgroundColor: Color(0xff000000),
                   ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyApp5()),
+                    );
+                  },
+                  child: Container(),
                 ),
               ),
             ),
-            Positioned(
-              // rectangle26bwW (51:98)
-              left: 125*fem,
-              top: 762*fem,
-              child: Align(
-                child: SizedBox(
-                  width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+          ),
+
+
+
             Positioned(
               // treatmentsXaG (51:99)
               left: 132*fem,
-              top: 638*fem,
+              top: 644*fem,
               child: Align(
                 child: SizedBox(
                   width: 144*fem,
