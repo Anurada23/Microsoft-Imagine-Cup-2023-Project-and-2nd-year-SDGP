@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="polish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Blackline.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Blackline.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Blacklinetrt.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Blacklinetrt.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/Muehrckeslinestrt.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/Muehrckeslinestrt.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/imagePicker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/imagePicker.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680665873975</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="polish">
+      <created>1680672100917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680672100917</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

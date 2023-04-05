@@ -4,6 +4,9 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
+import 'Blacklinetrt.dart';
+import 'imagePicker.dart';
+
 class SceneBL extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -117,18 +120,26 @@ class SceneBL extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle24JQg (51:94)
+              // rectangle24JQg (51:94)   //scan again
               left: 90*fem,
               top: 281*fem,
               child: Align(
                 child: SizedBox(
                   width: 229*fem,
                   height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff090909),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff090909),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp5()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),
@@ -175,40 +186,58 @@ class SceneBL extends StatelessWidget {
                 ),
               ),
             ),
+
             Positioned(
-              // rectangle23vKa (51:97)
+              // rectangle23vKa (51:97) // treatments
               left: 125*fem,
               top: 633*fem,
               child: Align(
                 child: SizedBox(
                   width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
+                  height: 58*fem,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff000000),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>MyAppBLT()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),
             ),
             Positioned(
-              // rectangle26bwW (51:98)
+              // rectangle26bwW (51:98) // back
               left: 125*fem,
               top: 762*fem,
               child: Align(
                 child: SizedBox(
                   width: 159*fem,
                   height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff000000),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp5()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),
             ),
+
             Positioned(
               // treatmentsXaG (51:99)
               left: 132*fem,
