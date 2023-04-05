@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child: SceneTips(),//Scene1(),
+		 	child: Scene1(),//Scene1(),
 
 		 ),
 		  ),
