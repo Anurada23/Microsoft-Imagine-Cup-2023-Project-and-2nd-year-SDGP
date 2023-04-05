@@ -1,6 +1,9 @@
+import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:path/path.dart' show basename;
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -70,6 +73,7 @@ class _MainScreenState extends State<MainScreen> {
                 if (mounted) {
                   if (file != null) {
                     print("Picture saved to ${file.path}");
+                    sendImage(File(file.path));
                   }
                 }
               });
@@ -120,4 +124,29 @@ class _MainScreenState extends State<MainScreen> {
       ),
     );
   }
+
+   Future<void> sendImage(File imageFile) async {
+  var stream = http.ByteStream(imageFile.openRead().cast());
+  var length = await imageFile.length();
+
+  var uri = Uri.parse('http://192.168.8.106:5000/predict');
+  var request = http.MultipartRequest("POST", uri);
+
+  var multipartFile = http.MultipartFile(
+    'file',
+    stream,
+    length,
+    filename: basename(imageFile.path),
+  );
+  request.files.add(multipartFile);
+
+  var response = await request.send();
+  if (response.statusCode == 200) {
+    String result = await response.stream.bytesToString();
+    print(result);
+    // Navigate to a new screen to display the prediction result
+  } else {
+    throw Exception('Failed to predict image');
+  }
+}
 }

@@ -3,11 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/Blackline.dart';
+import 'package:myapp/page-1/Blacklinetrt.dart';
+import 'package:myapp/page-1/MainMenu.dart';
+import 'package:myapp/page-1/Muehrckresline.dart';
+import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/page-1/cameraScreen.dart';
-import 'package:myapp/page-1/iphone-14-5.dart';
+import 'package:myapp/page-1/imagePicker.dart';
+import 'package:myapp/page-1/tips.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/iphone-14-1.dart';
-import 'package:myapp/page-1/iphone-14-2.dart';
+import 'package:myapp/page-1/landingPage.dart';
+import 'package:myapp/page-1/Signup_login.dart';
+
 
 void main() async{
 	WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +36,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child: MyApp5(),//Scene1(),
+		 	child: Scene1(),//Scene1(),
 
 		 ),
 		  ),
