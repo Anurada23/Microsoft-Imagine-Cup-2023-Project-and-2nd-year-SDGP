@@ -21,89 +21,94 @@ import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' show basename;
 
-
 class MyApp5 extends StatefulWidget {
   @override
   _MyApp5State createState() => _MyApp5State();
 }
 
-
 class _MyApp5State extends State<MyApp5> {
   File? image1;
-  late String disease1="beau's line";
-  late String disease2="black line";
-  late String disease3="clubbing";
-  late String disease4="muehrck-e's lines";
-  late String disease5="onycholysis";
-  late String disease6="terry's nail";
-  late String disease7="white spot";
+  late String disease1 = "beau's line";
+  late String disease2 = "black line";
+  late String disease3 = "clubbing";
+  late String disease4 = "muehrck-e's lines";
+  late String disease5 = "onycholysis";
+  late String disease6 = "terry's nail";
+  late String disease7 = "white spot";
 
+  Future<Object?> sendImage(File imageFile) async {
+    var stream = http.ByteStream(imageFile.openRead().cast());
+    var length = await imageFile.length();
 
- Future<void> sendImage(File imageFile) async {
-  var stream = http.ByteStream(imageFile.openRead().cast());
-  var length = await imageFile.length();
+    var uri = Uri.parse('http://192.168.8.106:5000/predict');
+    var request = http.MultipartRequest("POST", uri);
 
-  var uri = Uri.parse('http://192.168.8.134:5000/predict');
-  var request = http.MultipartRequest("POST", uri);
+    var multipartFile = http.MultipartFile(
+      'file',
+      stream,
+      length,
+      filename: basename(
+          imageFile.path), // Set the filename of the file being uploaded
+    );
+    request.files.add(multipartFile);
 
-  var multipartFile = http.MultipartFile(
-    'file',
-    stream,
-    length,
-    // filename: basename(imageFile.path),
-  );
-  request.files.add(multipartFile);
-
-  var response = await request.send();
-  if (response.statusCode == 200) {
-    String result = await response.stream.bytesToString();
-    print(result);
-    // Navigate to a new screen to display the prediction result
-    Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
-      if (result== disease1 ) {
-        return MyAppBL1();
-      } else if (result== disease2) {
-        return MyAppBL1();
-      } else if (result== disease3) {
-        return MyAppC1();
-      }else if (result== disease4) {
-        return MyAppML1();
-      }else if (result== disease5) {
-        return MyAppON1();
-      }else if (result== disease6) {
-        return MyAppTN1();
-      }else if (result== disease7) {
-        return MyAppWS1();}
-      else {
-        return "This means non of the diseases above has been selected";
+    var response = await request.send();
+    if (response.statusCode == 200) {
+      String result = await response.stream.bytesToString();
+      print(result);
+      if (result == disease7) {
+      Navigator.push(context,MaterialPageRoute(builder: (context) => MyAppBL1())
+      );       
       }
+
+      // Navigate to a new screen to display the prediction result
+      Object compareStrings(result, disease1, disease2, disease3, disease4,
+          disease5, disease6, disease7) {
+        if (result == disease1) {
+          return MyAppBL1();
+        } else if (result == disease2) {
+          return MyAppBL1();
+        } else if (result == disease3) {
+          return MyAppC1();
+        } else if (result == disease4) {
+          return MyAppML1();
+        } else if (result == disease5) {
+          return MyAppON1();
+        } else if (result == disease6) {
+          return MyAppTN1();
+        } else if (result == disease7) {
+          return MyAppWS1();
+        } else {
+          return "This means none of the diseases above has been selected";
+        }
+      }
+    } else {
+      throw Exception('Failed to predict image');
     }
-  } else {
-    throw Exception('Failed to predict image');
   }
-}
 
-bool _isImagePickerActive = false;
+  bool _isImagePickerActive = false;
 
-Future<void> pickImage() async {
-  if (_isImagePickerActive) return; // Return if image picker is already active
-  _isImagePickerActive = true; // Set flag to indicate image picker is active
-  try {
-    final imagePicker = ImagePicker();
-    final pickedFile = await imagePicker.pickImage(source: ImageSource.gallery);
-    if (pickedFile == null) return;
+  Future<void> pickImage() async {
+    if (_isImagePickerActive)
+      return; // Return if image picker is already active
+    _isImagePickerActive = true; // Set flag to indicate image picker is active
+    try {
+      final imagePicker = ImagePicker();
+      final pickedFile =
+          await imagePicker.pickImage(source: ImageSource.gallery);
+      if (pickedFile == null) return;
 
-    final imageFile = File(pickedFile.path);
-    await sendImage(imageFile);
-  } on PlatformException catch (e) {
-    print("Failed to pick image: $e");
-  } finally {
-    _isImagePickerActive = false; // Reset flag after image picking is complete or cancelled
+      final imageFile = File(pickedFile.path);
+      await sendImage(imageFile);
+    } on PlatformException catch (e) {
+      print("Failed to pick image: $e");
+    } finally {
+      _isImagePickerActive =
+          false; // Reset flag after image picking is complete or cancelled
+    }
   }
-}
 
-
-  
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -114,27 +119,27 @@ Future<void> pickImage() async {
       child: Container(
         // iphone1413uB6 (46:31)
         width: double.infinity,
-        height: 844*fem,
-        decoration: BoxDecoration (
+        height: 844 * fem,
+        decoration: BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Stack(
           children: [
             Positioned(
               // tips2Wc (46:38)
-              left: 154*fem,
-              top: 467*fem,
+              left: 154 * fem,
+              top: 467 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 79*fem,
-                  height: 53*fem,
+                  width: 79 * fem,
+                  height: 53 * fem,
                   child: Text(
                     'Tips',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 45*ffem,
+                      fontSize: 45 * ffem,
                       fontWeight: FontWeight.w700,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xffffffff),
                     ),
                   ),
@@ -143,14 +148,14 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // rectangle22vrt (46:50)
-              left: 0*fem,
-              top: 740*fem,
+              left: 0 * fem,
+              top: 740 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 390*fem,
-                  height: 50*fem,
+                  width: 390 * fem,
+                  height: 50 * fem,
                   child: Container(
-                    decoration: BoxDecoration (
+                    decoration: BoxDecoration(
                       color: Color(0xff807e7e),
                     ),
                   ),
@@ -159,15 +164,15 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // rectangle223gc (46:51)
-              left: 0*fem,
-              top: 0*fem,
+              left: 0 * fem,
+              top: 0 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 390*fem,
-                  height: 822*fem,
+                  width: 390 * fem,
+                  height: 822 * fem,
                   child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(45*fem),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(45 * fem),
                       color: Color(0xffffffff),
                     ),
                   ),
@@ -176,24 +181,21 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // rectangle11xoa (46:35)
-              left: 0*fem,
-              top: 0*fem,
+              left: 0 * fem,
+              top: 0 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 390*fem,
-                  height: 145*fem,
+                  width: 390 * fem,
+                  height: 145 * fem,
                   child: Container(
-                    decoration: BoxDecoration (
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
-
                         topLeft: Radius.circular(0),
                         topRight: Radius.circular(0),
-                        bottomLeft: Radius.circular(50*fem),
-                        bottomRight: Radius.circular(50*fem),
-
-                      ),   // circular(50*fem),
+                        bottomLeft: Radius.circular(50 * fem),
+                        bottomRight: Radius.circular(50 * fem),
+                      ), // circular(50*fem),
                       color: Color(0xffdfdddd),
-
                     ),
                   ),
                 ),
@@ -201,19 +203,19 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // naildocgUg (46:36)
-              left: 112*fem,
-              top: 8*fem,
+              left: 112 * fem,
+              top: 8 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 185*fem,
-                  height: 101*fem,
+                  width: 185 * fem,
+                  height: 101 * fem,
                   child: Text(
                     'NailDoc',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Medula One',
-                      fontSize: 100*ffem,
+                      fontSize: 100 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.0075*ffem/fem,
+                      height: 1.0075 * ffem / fem,
                       color: Color(0xff090909),
                     ),
                   ),
@@ -237,19 +239,19 @@ Future<void> pickImage() async {
             // ),
             Positioned(
               // scanningXEQ (46:49)
-              left: 135*fem,
-              top: 166*fem,
+              left: 135 * fem,
+              top: 166 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 193*fem,
-                  height: 153*fem,
+                  width: 193 * fem,
+                  height: 153 * fem,
                   child: Text(
                     'Scanning Options',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 35*ffem,
+                      fontSize: 35 * ffem,
                       fontWeight: FontWeight.w700,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xff000000),
                     ),
                   ),
@@ -258,44 +260,42 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // rectangle4pDW (46:52)
-              left: 104*fem,
-              top: 490*fem,
+              left: 104 * fem,
+              top: 490 * fem,
               child: ElevatedButton(
                 onPressed: () {
                   pickImage();
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10*fem),
-                  ), backgroundColor: Color(0xff817f7f),
+                    borderRadius: BorderRadius.circular(10 * fem),
+                  ),
+                  backgroundColor: Color(0xff817f7f),
                 ),
                 child: SizedBox(
-                  width: 160*fem,
-                  height: 66*fem,
+                  width: 160 * fem,
+                  height: 66 * fem,
                   child: Container(),
                 ),
               ),
             ),
             // the ElevatedButton is used as a wrapper around the SizedBox widget. The onPressed property of the `ElevatedButton
 
-
-
-
             Positioned(
               // backjrG (46:53)
-              left: 160*fem,
-              top: 504*fem,
+              left: 160 * fem,
+              top: 504 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 90*fem,
-                  height: 38*fem,
+                  width: 90 * fem,
+                  height: 38 * fem,
                   child: Text(
                     'Upload',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 32*ffem,
+                      fontSize: 32 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xfff3efef),
                     ),
                   ),
@@ -305,19 +305,19 @@ Future<void> pickImage() async {
 
             Positioned(
               // pleasesteadythecameraandholdit (46:54)
-              left: 58*fem,
-              top: 588*fem,
+              left: 58 * fem,
+              top: 588 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 294*fem,
-                  height: 47*fem,
+                  width: 294 * fem,
+                  height: 47 * fem,
                   child: Text(
                     'Upload a excisting photo from a folder ',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 20*ffem,
+                      fontSize: 20 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xff807e7e),
                     ),
                   ),
@@ -325,46 +325,44 @@ Future<void> pickImage() async {
               ),
             ),
 
-
             Positioned(
               // rectangle4pDW (46:52)
-              left: 104*fem,
-              top: 685*fem,
+              left: 104 * fem,
+              top: 685 * fem,
               child: ElevatedButton(
                 onPressed: () {
                   //  onPressed logic here
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MyAppMM())
-                  );
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyAppMM()));
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10*fem),
-                  ), backgroundColor: Color(0xff817f7f),
+                    borderRadius: BorderRadius.circular(10 * fem),
+                  ),
+                  backgroundColor: Color(0xff817f7f),
                 ),
                 child: SizedBox(
-                  width: 160*fem,
-                  height: 66*fem,
+                  width: 160 * fem,
+                  height: 66 * fem,
                 ),
               ),
             ),
 
             Positioned(
               // backjrG (46:53)
-              left: 168*fem,
-              top: 698*fem,
+              left: 168 * fem,
+              top: 698 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 80*fem,
-                  height: 38*fem,
+                  width: 80 * fem,
+                  height: 38 * fem,
                   child: Text(
                     'Back',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 35*ffem,
+                      fontSize: 35 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xfff3efef),
                     ),
                   ),
@@ -373,19 +371,19 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // pleasesteadythecameraandholdit (46:54)
-              left: 58*fem,
-              top: 380*fem,
+              left: 58 * fem,
+              top: 380 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 294*fem,
-                  height: 47*fem,
+                  width: 294 * fem,
+                  height: 47 * fem,
                   child: Text(
                     'Note - Please steady the camera and \nhold it in a place with a good lighting ',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 20*ffem,
+                      fontSize: 20 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xff807e7e),
                     ),
                   ),
@@ -394,27 +392,24 @@ Future<void> pickImage() async {
             ),
             Positioned(
               // icontimehistoryjjn (46:55)
-              left: 104*fem,
-              top: 280*fem,
+              left: 104 * fem,
+              top: 280 * fem,
               child: Align(
                 child: ElevatedButton(
-
                   onPressed: () {
                     //  onPressed logic here
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MainScreen())
-                    );
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MainScreen()));
                   },
-
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10*fem),
-                    ), backgroundColor: Color(0xff817f7f),
+                      borderRadius: BorderRadius.circular(10 * fem),
+                    ),
+                    backgroundColor: Color(0xff817f7f),
                   ),
                   child: SizedBox(
-                    width: 160*fem,
-                    height: 66*fem,
+                    width: 160 * fem,
+                    height: 66 * fem,
                   ),
                 ),
               ),
@@ -422,19 +417,19 @@ Future<void> pickImage() async {
 
             Positioned(
               // backjrG (46:53)
-              left: 148*fem,
-              top: 290*fem,
+              left: 148 * fem,
+              top: 290 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 108*fem,
-                  height: 38*fem,
+                  width: 108 * fem,
+                  height: 38 * fem,
                   child: Text(
                     'Camera',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Roboto Condensed',
-                      fontSize: 35*ffem,
+                      fontSize: 35 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1725*ffem/fem,
+                      height: 1.1725 * ffem / fem,
                       color: Color(0xfff3efef),
                     ),
                   ),
