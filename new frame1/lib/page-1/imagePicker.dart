@@ -7,6 +7,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
+import 'Blackline.dart';
 import 'MainMenu.dart';
 import 'cameraScreen.dart';
 import 'package:http/http.dart' as http;
@@ -50,11 +51,19 @@ class _MyApp5State extends State<MyApp5> {
     String result = await response.stream.bytesToString();
     print(result);
     // Navigate to a new screen to display the prediction result
-    String compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
+    Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
       if (result== disease1 ) {
+        // late String disease1="beau's line";
+        // late String disease2="black line";
+        // late String disease3="clubbing";
+        // late String disease4="muehrck-e's lines";
+        // late String disease5="onycholysis";
+        // late String disease6="terry's nail";
+        // late String disease7="white spot";
+
         return "All three strings are equal.";
       } else if (result== disease2) {
-        return "The first string is the largest.";
+        return SceneBL();
       } else if (result== disease3) {
         return "The second string is the largest.";
       }else if (result== disease4) {
