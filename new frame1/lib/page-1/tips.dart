@@ -5,7 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/whitespottrt.dart';
 import 'package:myapp/utils.dart';
 
+import 'Clubbingtrt.dart';
 import 'MainMenu.dart';
+import 'Muehrckeslinestrt.dart';
 
 class SceneTips extends StatelessWidget {
   @override
@@ -286,7 +288,7 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())
+                          MaterialPageRoute(builder: (context) => MyAppTips())// tama na
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -311,7 +313,7 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())
+                          MaterialPageRoute(builder: (context) =>  MyAppWST())
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -336,14 +338,13 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())
+                          MaterialPageRoute(builder: (context) =>MyAppCT())
                       );
                     },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50*fem),
-                      ),
-                      primary: Color(0xffa2d4d9),
+                      ), backgroundColor: Color(0xffa2d4d9),
                     ),
                     child: SizedBox.shrink(),
                   ),
@@ -362,14 +363,13 @@ class SceneTips extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppTips())
+                          MaterialPageRoute(builder: (context) => MyAppMLT())
                       );
                     },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50*fem),
-                      ),
-                      primary: Color(0xff23a0ad),
+                      ), backgroundColor: Color(0xff23a0ad),
                     ),
                     child: SizedBox.shrink(),
                   ),

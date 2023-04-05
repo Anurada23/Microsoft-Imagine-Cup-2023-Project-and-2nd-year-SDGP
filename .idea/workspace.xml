@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment="polish">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/MainMenu.dart" afterDir="false" />
+    <list default="true" id="0fe9aabe-f20b-4f8a-b0c7-2c8ee8c6152b" name="Changes" comment=" polish 2">
       <change beforePath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" beforeDir="false" afterPath="$PROJECT_DIR$/new frame1/lib/page-1/tips.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680674799827</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=" polish 2">
+      <created>1680691015496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680691015496</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +176,8 @@
     <MESSAGE value="hgvbj" />
     <MESSAGE value="test x" />
     <MESSAGE value="polish" />
-    <option name="LAST_COMMIT_MESSAGE" value="polish" />
+    <MESSAGE value=" polish 2" />
+    <option name="LAST_COMMIT_MESSAGE" value=" polish 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -248,6 +251,16 @@
           <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
           <line>197</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>251</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/new frame1/lib/page-1/tips.dart</url>
+          <line>276</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
