@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -10,6 +12,7 @@ import 'package:myapp/page-1/Muehrckresline.dart';
 import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
+import 'Beauslines.dart';
 import 'Blackline.dart';
 import 'MainMenu.dart';
 import 'Onycholysis.dart';
@@ -56,33 +59,33 @@ class _MyApp5State extends State<MyApp5> {
     if (response.statusCode == 200) {
       String result = await response.stream.bytesToString();
       print(result);
-      if (result == disease7) {
-      Navigator.push(context,MaterialPageRoute(builder: (context) => MyAppBL1())
-      );       
+      if (result == disease1) {
+        // ignore: use_build_context_synchronously
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppBEL1()));
+      } else if (result == disease2) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppBL1()));
+      } else if (result == disease3) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppC1()));
+      } else if (result == disease4) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppML1()));
+      } else if (result == disease5) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppON1()));
+      } else if (result == disease6) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppTN1()));
+      } else if (result == disease7) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MyAppWS1()));
+      } else {
+        return "This means none of the diseases above has been selected";
       }
 
-      // Navigate to a new screen to display the prediction result
-      Object compareStrings(result, disease1, disease2, disease3, disease4,
-          disease5, disease6, disease7) {
-        if (result == disease1) {
-          return MyAppBL1();
-        } else if (result == disease2) {
-          return MyAppBL1();
-        } else if (result == disease3) {
-          return MyAppC1();
-        } else if (result == disease4) {
-          return MyAppML1();
-        } else if (result == disease5) {
-          return MyAppON1();
-        } else if (result == disease6) {
-          return MyAppTN1();
-        } else if (result == disease7) {
-          return MyAppWS1();
-        } else {
-          return "This means none of the diseases above has been selected";
-        }
-      }
-    } else {
+      } else {
       throw Exception('Failed to predict image');
     }
   }
