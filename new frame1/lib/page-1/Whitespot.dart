@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/whitespottrt.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+import 'imagePicker.dart';
+
+class SceneWS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -117,18 +120,26 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle24JQg (51:94)
+              // rectangle24JQg (51:94)   //scan again
               left: 90*fem,
               top: 281*fem,
               child: Align(
                 child: SizedBox(
                   width: 229*fem,
                   height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff090909),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff090909),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp5()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),
@@ -176,35 +187,51 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle23vKa (51:97)
+              // rectangle23vKa (51:97) // treatments
               left: 125*fem,
               top: 633*fem,
               child: Align(
                 child: SizedBox(
                   width: 159*fem,
-                  height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
+                  height: 58*fem,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff000000),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>MyAppWST()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),
             ),
             Positioned(
-              // rectangle26bwW (51:98)
+              // rectangle26bwW (51:98) // back
               left: 125*fem,
               top: 762*fem,
               child: Align(
                 child: SizedBox(
                   width: 159*fem,
                   height: 48*fem,
-                  child: Container(
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(10*fem),
-                      color: Color(0xff000000),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10*fem),
+                      ), backgroundColor: Color(0xff000000),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp5()),
+                      );
+                    },
+                    child: Container(),
                   ),
                 ),
               ),

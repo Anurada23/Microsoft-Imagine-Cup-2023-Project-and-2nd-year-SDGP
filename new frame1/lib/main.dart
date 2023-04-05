@@ -5,6 +5,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/Blackline.dart';
 import 'package:myapp/page-1/Muehrckresline.dart';
+import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/page-1/cameraScreen.dart';
 import 'package:myapp/page-1/imagePicker.dart';
 import 'package:myapp/utils.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
 		 //home:Scene(),
 		  home: Scaffold(
 		  body: SingleChildScrollView(
-		 	child:  SceneBL(),//Scene1(),
+		 	child:  SceneWS(),//Scene1(),
 
 		 ),
 		  ),
