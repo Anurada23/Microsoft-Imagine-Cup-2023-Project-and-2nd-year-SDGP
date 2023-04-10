@@ -10,7 +10,6 @@ import 'package:myapp/page-1/Muehrckresline.dart';
 import 'package:myapp/page-1/Whitespot.dart';
 import 'package:myapp/utils.dart';
 import 'package:image_picker/image_picker.dart';
-import 'Beauslines.dart';
 import 'Blackline.dart';
 import 'MainMenu.dart';
 import 'Onycholysis.dart';
@@ -62,7 +61,7 @@ class _MyApp5State extends State<MyApp5> {
     // Navigate to a new screen to display the prediction result
     Object compareStrings(result, disease1 , disease2, disease3,disease4 , disease5, disease6,disease7 ) {
       if (result== disease1 ) {
-        return MyAppBEL1();
+        return MyAppBL1();
       } else if (result== disease2) {
         return MyAppBL1();
       } else if (result== disease3) {

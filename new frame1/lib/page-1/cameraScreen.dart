@@ -133,7 +133,7 @@ class _MainScreenState extends State<MainScreen> {
   var request = http.MultipartRequest("POST", uri);
 
   var multipartFile = http.MultipartFile(
-    'image',
+    'file',
     stream,
     length,
     filename: basename(imageFile.path),
