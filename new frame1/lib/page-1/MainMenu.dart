@@ -278,7 +278,7 @@ class SceneMM extends StatelessWidget {
 
                             },
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.transparent, // Change the background color to yellow
+                              backgroundColor: Colors.transparent, // Change the background color to yellow
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10), // Add rounded corners
                               ),
