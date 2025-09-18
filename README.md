@@ -57,14 +57,6 @@ The app is designed to make early detection of nail health issues more accessibl
 
 ---
 
-## Future Improvements
-
-* Expand dataset with more labeled nail condition images.
-* Add explainability features (Grad-CAM visualizations).
-* Support multilingual output for global users.
-
----
-
 ## License
 
 This project is for educational and research purposes.
