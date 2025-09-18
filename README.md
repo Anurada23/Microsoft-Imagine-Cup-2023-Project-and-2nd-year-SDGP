@@ -4,7 +4,6 @@
 The app is designed to make early detection of nail health issues more accessible by allowing users to upload or capture images and receive instant predictions.
 
 ---
-## Project Cover
 
 ![Project Cover](Assets/1754548745490.jpg)
 
